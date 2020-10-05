@@ -1,0 +1,25 @@
+{
+  "name": "menet-wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trajkd/MEnet-wp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trajkd/MEnet-wp/issues"
+  },
+  "homepage": "https://github.com/trajkd/MEnet-wp#readme"
+}
