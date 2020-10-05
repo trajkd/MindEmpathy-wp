@@ -18,24 +18,24 @@
         <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport">
         <meta name="robots" content="index, follow">
         <title>Ideas - <?php bloginfo( 'name' ) ?></title>
-        <link href="/wp-content/themes/MEnet-wp/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/wp-content/themes/MEnet-wp/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="/wp-content/themes/MindEmpathy-wp/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/wp-content/themes/MindEmpathy-wp/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/wp-content/themes/MEnet-wp/static/fonts/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/style.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/static.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/dipaolo.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/dipaolo2.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/header.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/lago.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/lago-style.css">
-        <script src="/wp-content/themes/MEnet-wp/static/js/main.js"></script>
+        <link rel="stylesheet" href="/wp-content/themes/MindEmpathy-wp/static/fonts/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/static.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/dipaolo.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/dipaolo2.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/lago.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/lago-style.css">
+        <script src="/wp-content/themes/MindEmpathy-wp/static/js/main.js"></script>
         <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/wp-content/themes/MEnet-wp/static/css/app.css">
-        <link rel="stylesheet" href="/wp-content/themes/MEnet-wp/static/css/css2">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/boffi.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/clean-blog.css">
+        <link rel="stylesheet" href="/wp-content/themes/MindEmpathy-wp/static/css/app.css">
+        <link rel="stylesheet" href="/wp-content/themes/MindEmpathy-wp/static/css/css2">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/boffi.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css">
         <style>
             :root {
             --main-color-hue: 360;
@@ -55,9 +55,9 @@
             text-overflow: ellipsis;
             }
         </style>
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/ck.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/ot.css">
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/vue.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/ck.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/ot.css">
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/vue.css">
     </head>
     <body id="app" class="">
         <div id="sidebar-section-peripherial">
@@ -147,7 +147,7 @@
                             <div class="projects__list-item">
                                 <a class="projects-card" href="/viewmode">
                                     <div class="column small-12 medium-4 projects-card__content">
-                                        <div class="projects-card__content__logo" style="background-image: url('/wp-content/themes/MEnet-wp/static/img/idealogo.svg');"></div>
+                                        <div class="projects-card__content__logo" style="background-image: url('/wp-content/themes/MindEmpathy-wp/static/img/idealogo.svg');"></div>
                                         <h3 class="projects-card__content__title">PAGE PROJECT EXAMPLE</h3>
                                         <p class="projects-card__content__text"> Short description of your project </p>
                                         <div class="projects-card__content__tag-list">
@@ -157,7 +157,7 @@
                                     </div>
                                     <div class="column small-12 medium-8 projects-card__wrap">
                                         <!----> <!---->
-                                        <div class="projects-card__wrap-image" style="background-image: url('/wp-content/themes/MEnet-wp/static/img/ikea-man.svg');"> </div>
+                                        <div class="projects-card__wrap-image" style="background-image: url('/wp-content/themes/MindEmpathy-wp/static/img/ikea-man.svg');"> </div>
                                         <!----> <!----> <!----><!---->
                                         <div class="projects-card__hire">
                                             <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">Developers</span> </div>
@@ -188,10 +188,10 @@
         </div>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <script src="/wp-content/themes/MEnet-wp/static/js/jquery.js"></script>
+        <script src="/wp-content/themes/MindEmpathy-wp/static/js/jquery.js"></script>
         <script src="https://sdk.amazonaws.com/js/aws-sdk-2.766.0.min.js"></script>
-        <script src="/wp-content/themes/MEnet-wp/static/js/clean-blog.js"></script>
-        <script src="/wp-content/themes/MEnet-wp/static/js/sidebar.js"></script>
-        <script src="/wp-content/themes/MEnet-wp/static/js/ideas.js"></script>
+        <script src="/wp-content/themes/MindEmpathy-wp/static/js/clean-blog.js"></script>
+        <script src="/wp-content/themes/MindEmpathy-wp/static/js/sidebar.js"></script>
+        <script src="/wp-content/themes/MindEmpathy-wp/static/js/ideas.js"></script>
     </body>
 </html>

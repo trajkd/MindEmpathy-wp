@@ -19,30 +19,30 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/header.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/styles-m.min.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/styles-l.min.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/sections.min.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/animated-menu-item.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/style-open.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/theme-frau.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/clean-blog.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/tabs.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/select.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/selectric.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/typo.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/spacer.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/flex.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/base.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/bg.scss">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/select.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/boffi.css">
-  <link rel="stylesheet" href="/wp-content/themes/MEnet-wp/static/fonts/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/styles-m.min.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/styles-l.min.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/sections.min.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/animated-menu-item.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/style-open.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/theme-frau.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/tabs.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/select.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/selectric.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/typo.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/spacer.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/flex.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/base.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/bg.scss">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/select.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/boffi.css">
+  <link rel="stylesheet" href="/wp-content/themes/MindEmpathy-wp/static/fonts/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,800i" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="/wp-content/themes/MEnet-wp/static/js/togglelang.js"></script>
-  <script src="/wp-content/themes/MEnet-wp/static/js/main.js"></script>
+  <script src="/wp-content/themes/MindEmpathy-wp/static/js/togglelang.js"></script>
+  <script src="/wp-content/themes/MindEmpathy-wp/static/js/main.js"></script>
   <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -90,18 +90,18 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
     </main>
     <?php get_footer(); ?>
 </div>
-<script src="/wp-content/themes/MEnet-wp/static/js/jquery.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/js/jquery.js"></script>
 <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="/wp-content/themes/MEnet-wp/static/js/clean-blog.js"></script>
-<script src="/wp-content/themes/MEnet-wp/static/js/sidebar.js"></script>
-<script src="/wp-content/themes/MEnet-wp/static/bootstrap/js/bootstrap.min.js"></script>
-<script src="/wp-content/themes/MEnet-wp/static/js/crs.min.js"></script>
-<script src="/wp-content/themes/MEnet-wp/static/js/jquery.selectric.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/js/clean-blog.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/js/sidebar.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/js/crs.min.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/js/jquery.selectric.js"></script>
 <script type="text/javascript">
     var posted_billing_state = <?php if (isset( $_POST['billing_state'] ) ) echo json_encode(esc_html($_POST['billing_state'])); else echo '""' ?>;
     var posted_shipping_state = <?php if (isset( $_POST['shipping_state'] ) ) echo json_encode(esc_html($_POST['shipping_state'])); else echo '""' ?>;
 </script>
-<script src="/wp-content/themes/MEnet-wp/static/js/tabs.js"></script>
+<script src="/wp-content/themes/MindEmpathy-wp/static/js/tabs.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-form@4.3.0/dist/jquery.form.min.js"></script>
 <?php if (isset($_POST['billing_country'])) {
 echo 

@@ -11,17 +11,17 @@
   <title><?php bloginfo( 'name' ) ?></title>
 
   <!-- Bootstrap core CSS -->
-  <link href="/wp-content/themes/MEnet-wp/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/wp-content/themes/MindEmpathy-wp/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="/wp-content/themes/MEnet-wp/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="/wp-content/themes/MindEmpathy-wp/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/boffi.css">
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/header.css">
-  <link href="/wp-content/themes/MEnet-wp/static/css/clean-blog.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/boffi.css">
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/header.css">
+  <link href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css" rel="stylesheet">
 
 </head>
 
@@ -89,13 +89,13 @@
   <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="/wp-content/themes/MEnet-wp/static/vendor/jquery/jquery.min.js"></script>
-  <script src="/wp-content/themes/MEnet-wp/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/wp-content/themes/MindEmpathy-wp/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/wp-content/themes/MindEmpathy-wp/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="/wp-content/themes/MEnet-wp/static/js/clean-blog.js"></script>
-  <script async src="/wp-content/themes/MEnet-wp/static/js/networkanimation.js"></script>
-  <script src="/wp-content/themes/MEnet-wp/static/js/sidebar.js"></script>
+  <script src="/wp-content/themes/MindEmpathy-wp/static/js/clean-blog.js"></script>
+  <script async src="/wp-content/themes/MindEmpathy-wp/static/js/networkanimation.js"></script>
+  <script src="/wp-content/themes/MindEmpathy-wp/static/js/sidebar.js"></script>
 
 </body>
 

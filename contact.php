@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Contact - <?php bloginfo( 'name' ) ?></title>
-    <link rel="stylesheet" href="/wp-content/themes/MEnet-wp/static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/wp-content/themes/MindEmpathy-wp/static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="/wp-content/themes/MEnet-wp/static/fonts/font-awesome.min.css">
-    <link href="/wp-content/themes/MEnet-wp/static/css/contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="/wp-content/themes/MindEmpathy-wp/static/fonts/font-awesome.min.css">
+    <link href="/wp-content/themes/MindEmpathy-wp/static/css/contact.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/boffi.css">
-    <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/header.css">
-    <link rel="stylesheet" type="text/css" href="/wp-content/themes/MEnet-wp/static/css/clean-blog.css">
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/boffi.css">
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     </div>
     <div id="sidebar-section-peripherial">
         <?php get_sidebar(); ?>
-        <header class="masthead link-masthead" style="background-image:url('/wp-content/themes/MEnet-wp/static/img/contact-bg.jpg');">
+        <header class="masthead link-masthead" style="background-image:url('/wp-content/themes/MindEmpathy-wp/static/img/contact-bg.jpg');">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -72,7 +72,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="messageModalLabel">Info</h5>
-                        <img class="paperplane" src="/wp-content/themes/MEnet-wp/static/img/paperplane.svg" alt="Paper Plane">
+                        <img class="paperplane" src="/wp-content/themes/MindEmpathy-wp/static/img/paperplane.svg" alt="Paper Plane">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -94,14 +94,14 @@
     </div>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/wp-content/themes/MEnet-wp/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/wp-content/themes/MindEmpathy-wp/static/vendor/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form@4.3.0/dist/jquery.form.min.js"></script>
-    <script src="/wp-content/themes/MEnet-wp/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/wp-content/themes/MEnet-wp/static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/wp-content/themes/MEnet-wp/static/js/clean-blog.js"></script>
-    <script src="/wp-content/themes/MEnet-wp/static/js/form.js"></script>
-    <script src="/wp-content/themes/MEnet-wp/static/js/sidebar.js"></script>
+    <script src="/wp-content/themes/MindEmpathy-wp/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/wp-content/themes/MindEmpathy-wp/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/wp-content/themes/MindEmpathy-wp/static/js/clean-blog.js"></script>
+    <script src="/wp-content/themes/MindEmpathy-wp/static/js/form.js"></script>
+    <script src="/wp-content/themes/MindEmpathy-wp/static/js/sidebar.js"></script>
 </body>
 
 </html>
