@@ -27797,7 +27797,7 @@ button.project-screenshot__add {
 .projects-card__hire {
 	position: absolute;
 	right: 1.25rem;
-	width: 225px;
+	width: 300px;
 	-webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 	filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1))
 }
@@ -27859,7 +27859,7 @@ button.project-screenshot__add {
 
 .projects-card__hire__text3 {
 	display: inline-block;
-	max-width: 84px;
+	max-width: 140px;
 	color: var(--white);
 	text-transform: uppercase;
 	white-space: nowrap;

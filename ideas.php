@@ -153,26 +153,26 @@
                                         <div class="projects-card__content__tag-list">
                                             <!----> 
                                         </div>
-                                        <div class="projects-card__content__link"> View project<i class="ideacons idea-ht-arrow-right"></i> </div>
+                                        <div class="projects-card__content__link"> View project<i class="fas fa-arrow-right"></i> </div>
                                     </div>
                                     <div class="column small-12 medium-8 projects-card__wrap">
                                         <!----> <!---->
                                         <div class="projects-card__wrap-image" style="background-image: url('/wp-content/themes/MEnet-wp/static/img/ikea-man.svg');"> </div>
                                         <!----> <!----> <!----><!---->
                                         <div class="projects-card__hire">
-                                            <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">Developers</span> <i class="ideacons idea-ht-arrow-right"></i> </div>
+                                            <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">Developers</span> </div>
                                             <!---->
                                             <div class="projects-card__hire__others"> And other profiles… </div>
                                             <!----> 
-                                            <div class="projects-card__hire__icon"> <i class="ideacons idea-ht-bullhorn"></i> </div>
+                                            <div class="projects-card__hire__icon"> <i class="fas fa-bullhorn"></i> </div>
                                         </div>
                                         <!----><!----><!---->
                                         <div class="projects-card__hire">
-                                            <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">UX/UI Designers</span> <i class="ideacons idea-ht-arrow-right"></i> </div>
+                                            <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">UX/UI Designers</span> </div>
                                             <!---->
                                             <div class="projects-card__hire__others"> And other profiles… </div>
                                             <!----> 
-                                            <div class="projects-card__hire__icon"> <i class="ideacons idea-ht-bullhorn"></i> </div>
+                                            <div class="projects-card__hire__icon"> <i class="fas fa-bullhorn"></i> </div>
                                         </div>
                                         <!----><!----> <!----> 
                                     </div>

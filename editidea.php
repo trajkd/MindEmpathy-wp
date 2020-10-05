@@ -667,6 +667,6 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.766.0.min.js"></script>
 		<script src="/wp-content/themes/MEnet-wp/static/js/clean-blog.js"></script>
 		<script src="/wp-content/themes/MEnet-wp/static/js/sidebar.js"></script>
-		<script src="/wp-content/themes/MEnet-wp/static/js/ideas.js"></script>
+		<script src="/wp-content/themes/MEnet-wp/static/js/editidea.js"></script>
     </body>
 </html>
