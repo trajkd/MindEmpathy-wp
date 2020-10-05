@@ -392,20 +392,25 @@ a span.hidden {
   border-bottom: 1px solid white;
   background-color: rgba(255, 255, 255, 0.9);
 }
-@media only screen and (max-width: 991px) {
-  #mainNav.is-fixed {
-    top: -166px;
-  }
+@media only screen and (max-width: 532px) {
+    #mainNav.is-fixed {
+        top: -190px;
+    }
 }
-@media only screen and (max-width: 870px) {
-  #mainNav.is-fixed {
-    top: -172px;
-  }
+@media only screen and (min-width: 533px) and (max-width: 696px) {
+    #mainNav.is-fixed {
+        top: -167px;
+    }
 }
-@media only screen and (max-width: 544px) {
-  #mainNav.is-fixed {
-    top: -187px;
-  }
+@media only screen and (min-width: 697px) and (max-width: 736px) {
+    #mainNav.is-fixed {
+        top: -180px;
+    }
+}
+@media only screen and (min-width: 737px) and (max-width: 991px) {
+    #mainNav.is-fixed {
+        top: -157px;
+    }
 }
 #mainNav.is-fixed .navbar-brand {
   color: #212529;

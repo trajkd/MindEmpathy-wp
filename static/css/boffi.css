@@ -4357,7 +4357,7 @@ html.desktop #menu:not(.open) #menu-bar.dark-theme:hover {
     }
 }
 #menu-bar__boffi-logo {
-    top: 26px;
+    top: 15.5px;
     right: 30px;
     bottom: auto;
     left: auto;
@@ -8728,36 +8728,8 @@ html.desktop #flagship-info-tabs__contact-pane-content > div a:hover {
     }
 }
 
-#mainNav.is-fixed {
-    top: -140px;
-}
-
 .member #user-actions {
     margin-left: 1px;
-}
-
-@media only screen and (max-width: 532px) {
-    #mainNav.is-fixed {
-        top: -176px;
-    }
-}
-
-@media only screen and (min-width: 533px) and (max-width: 696px) {
-    #mainNav.is-fixed {
-        top: -152px;
-    }
-}
-
-@media only screen and (min-width: 697px) and (max-width: 736px) {
-    #mainNav.is-fixed {
-        top: -176px;
-    }
-}
-
-@media only screen and (min-width: 737px) and (max-width: 991px) {
-    #mainNav.is-fixed {
-        top: -152px;
-    }
 }
 
 @media only screen and (max-width: 991px) {
