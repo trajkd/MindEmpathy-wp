@@ -12,7 +12,8 @@ $("button.add-idea").click( function() {
 		dataType : "json",
 		url : "https://mindempathy.net/wp-json/wp/v2/editidea",
 		error: function(error) {
-			console.log("Error while listing existing ideas: " + error);
+			console.log("Error while listing existing ideas: ");
+			console.log(error);
 		},
 		success: function(response) {
 			console.log(response);
