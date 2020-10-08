@@ -1641,7 +1641,7 @@ $(".idt-switch").click( function() {
              type : "POST",
              dataType : "json",
              url : "https://mindempathy.net/wp-json/wp/v2/projects",
-             data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: `<!DOCTYPE html>
+             data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", template: `<!DOCTYPE html>
 						<html lang="en" style="--vh:6.21px;">
 						    <head>
 						        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
