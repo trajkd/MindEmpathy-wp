@@ -26296,10 +26296,10 @@ idt-menu-interview .idt-menu-conference__footer a {
 }
 
 .project-category__options__item:not(:last-child):after {
-	content: "/";
+	content: "|";
 	display: block;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	right: 0;
 	transform: translateY(-50%)
 }
@@ -26635,7 +26635,7 @@ idt-menu-interview .idt-menu-conference__footer a {
 	font-size: 16px;
 	text-indent: -1px;
 	color: var(--white);
-	z-index: 10
+	z-index: 1
 }
 
 .project-hiw__delete-icon {
@@ -27169,7 +27169,8 @@ idt-menu-interview .idt-menu-conference__footer a {
 .project-hires__item__tag {
 	font-size: 1.1rem;
 	font-weight: var(--font-weight-bold);
-	line-height: 1.4
+	line-height: 1.4;
+	text-align: center
 }
 
 .project-hires__item__check {
@@ -27678,13 +27679,13 @@ button.project-screenshot__add {
 	background-size: cover;
 	border-radius: 50%;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, .15);
-	z-index: 10
+	z-index: 1
 }
 
 @media only screen and (max-width:639px) {
 	.projects-card__content__logo {
 		bottom: 0;
-		left: 50%;
+		left: 20%;
 		transform: translate(-50%, 50%)
 	}
 }
@@ -27794,22 +27795,30 @@ button.project-screenshot__add {
 	}
 }
 
-.projects-card__hire {
+.projects-card__hire-wrapper {
 	position: absolute;
 	right: 1.25rem;
-	width: 300px;
+}
+
+.projects-card__hire {
+	position: relative;
+	width: 250px;
 	-webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1));
 	filter: drop-shadow(0 0 2px rgba(0, 0, 0, .1))
 }
 
+.projects-card__hire + .projects-card__hire {
+	margin-top: 4px;
+}
+
 @media only screen and (max-width:639px) {
-	.projects-card__hire {
+	.projects-card__hire-wrapper {
 		top: -6.65rem
 	}
 }
 
 @media only screen and (min-width:640px) {
-	.projects-card__hire {
+	.projects-card__hire-wrapper {
 		top: 1.25rem
 	}
 }
@@ -27839,7 +27848,7 @@ button.project-screenshot__add {
 
 .projects-card__hire__my-profile.many {
 	height: 40px;
-	border-radius: 8px 8px 0 0;
+	border-radius: 0 8px 8px 0;
 	line-height: 40px
 }
 

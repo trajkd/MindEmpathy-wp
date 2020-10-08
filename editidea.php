@@ -268,95 +268,9 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                <!---->
 	                                                <div class="note"> <span class="note-text"> This section will only display if the steps are completed. You can also add up to 2 extra steps. </span> </div>
 	                                                <!----> 
-	                                                <ul class="project-hiw__list list--3">
-	                                                    <!---->
-	                                                    <li class="project-hiw__list-item">
-	                                                        <div class="project-hiw">
-	                                                            <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
-	                                                                <img class="project-hiw__image ng-hide"> 
-	                                                                <div class="project-hiw__image-number">1</div>
-	                                                            </div>
-	                                                            <!---->
-	                                                            <div>
-	                                                                <idt-fs-upload-file type="image" class="upload-default"on-error="onError" label="Add an image">
-	                                                                    <label type="button" class="button upload-file__btn" accept="image/*" for="inputFile1">
-	                                                                        <input type="file" accept="image/*" class="input-file-hidden ng-pristine ng-untouched ng-valid ng-not-empty" id="inputFile1" name="uploader"> <span></span> <span class="upload-file__progress">Add an image</span>
-	                                                                    </label>
-	                                                                </idt-fs-upload-file>
-	                                                                <span class="project-hiw__delete-icon"> 
-	                                                                	<div class="idt-icon">
-	                                                                		<i class="fas fa-trash"></i>
-	                                                                	</div> 
-	                                                                </span>
-	                                                                <!----> 
-	                                                                <div class="idt-max-length__wrapper"><input type="text" value="" idt-max-length="50" placeholder="Step title" class="project-step-title project-step-title1 ng-pristine ng-untouched ng-valid ng-empty editable"><span class="idt-max-length__counter"></span></div>
-	                                                                <!----> 
-	                                                                <div class="idt-max-length__wrapper"><textarea class="project-step-description project-step-description1 project__textarea ng-pristine ng-untouched ng-valid ng-empty editable" idt-max-length="200" rows="1" placeholder="Step description"></textarea><span class="idt-max-length__counter"></span>
-	                                                                </div>
-	                                                            </div>
-	                                                            <!----> <!----> <!----> 
-	                                                        </div>
-	                                                    </li>
-	                                                    <!---->
-	                                                    <li class="project-hiw__list-item">
-	                                                        <div class="project-hiw">
-	                                                            <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
-	                                                                <img class="project-hiw__image ng-hide"> 
-	                                                                <div class="project-hiw__image-number">2</div>
-	                                                            </div>
-	                                                            <!---->
-	                                                            <div>
-	                                                                <idt-fs-upload-file type="image" class="upload-default" on-uploaded="onUploadedSteps($index)" on-error="onError" label="Add an image">
-	                                                                    <label type="button" class="button upload-file__btn" accept="image/*" for="inputFile2">
-	                                                                        <input type="file" accept="image/*" class="input-file-hidden ng-pristine ng-untouched ng-valid ng-not-empty" id="inputFile2" name="uploader"> <span></span> <span class="upload-file__progress">Add an image</span>
-	                                                                    </label>
-	                                                                </idt-fs-upload-file>
-	                                                                <span class="project-hiw__delete-icon"> 
-	                                                                	<div class="idt-icon">
-	                                                                		<i class="fas fa-trash"></i>
-	                                                                	</div> 
-	                                                                </span>
-	                                                                <!----> 
-	                                                                <div class="idt-max-length__wrapper"><input type="text" value="" idt-max-length="50" placeholder="Step title" class="project-step-title project-step-title2 ng-pristine ng-untouched ng-valid ng-empty editable"><span class="idt-max-length__counter"></span></div>
-	                                                                <!----> 
-	                                                                <div class="idt-max-length__wrapper"><textarea class="project-step-description project-step-description2 project__textarea ng-pristine ng-untouched ng-valid ng-empty editable" idt-max-length="200" rows="1" placeholder="Step description"></textarea><span class="idt-max-length__counter"></span>
-	                                                                </div>
-	                                                            </div>
-	                                                            <!----> <!----> <!----> 
-	                                                        </div>
-	                                                    </li>
-	                                                    <!---->
-	                                                    <li class="project-hiw__list-item">
-	                                                        <div class="project-hiw">
-	                                                            <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
-	                                                                <img class="project-hiw__image ng-hide"> 
-	                                                                <div class="project-hiw__image-number">3</div>
-	                                                            </div>
-	                                                            <!---->
-	                                                            <div>
-	                                                                <idt-fs-upload-file type="image" class="upload-default" on-uploaded="onUploadedSteps($index)" on-error="onError" label="Add an image">
-	                                                                    <label type="button" class="button upload-file__btn" accept="image/*" for="inputFile3">
-	                                                                        <input type="file" accept="image/*" class="input-file-hidden ng-pristine ng-untouched ng-valid ng-not-empty" id="inputFile3" name="uploader"> <span></span> <span class="upload-file__progress">Add an image</span>
-	                                                                    </label>
-	                                                                </idt-fs-upload-file>
-	                                                                <span class="project-hiw__delete-icon"> 
-	                                                                	<div class="idt-icon">
-	                                                                		<i class="fas fa-trash"></i>
-	                                                                	</div> 
-	                                                                </span>
-	                                                                <!----> 
-	                                                                <div class="idt-max-length__wrapper"><input type="text" value="" idt-max-length="50" placeholder="Step title" class="project-step-title project-step-title3 ng-pristine ng-untouched ng-valid ng-empty editable"><span class="idt-max-length__counter"></span></div>
-	                                                                <!----> 
-	                                                                <div class="idt-max-length__wrapper"><textarea class="project-step-description project-step-description3 project__textarea ng-pristine ng-untouched ng-valid ng-empty editable" idt-max-length="200" rows="1" placeholder="Step description"></textarea><span class="idt-max-length__counter"></span>
-	                                                                </div>
-	                                                            </div>
-	                                                            <!----> <!----> <!----> 
-	                                                        </div>
-	                                                    </li>
-	                                                    <!----> 
-	                                                </ul>
+	                                                
 	                                                <!---->
-	                                                <div class="text-center"> 
+	                                                <div class="text-center edit-steps"> 
 	                                                	<button class="button delete-step alert" disabled="disabled"> Delete last step (min: 3) </button> 
 	                                                	<button class="button add-step"> Add a step (max: 9) </button> 
 	                                                </div>
@@ -412,7 +326,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                    </div>
 	                                </div>
 	                                <!----> <!---->
-	                                <div class="project-screenshots">
+	                                <!-- <div class="project-screenshots">
 	                                    <div class="row">
 	                                        <div class="column small-12">
 	                                            <h2 class="project-section__title title--screenshots"> <span class="project-section__title-icon icon--screenshots">
@@ -421,22 +335,15 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                </div>
 	                                            </span>
 	                                            <br> <span>Pictures</span> </h2>
-	                                            <!---->
 	                                            <div class="note"> <span class="note-text"> Upload images of your idea. You can see how it looks in view mode. </span> </div>
-	                                            <!----> 
 	                                        </div>
 	                                    </div>
-	                                    <!---->
 	                                    <div class="row align-center align-middle" name="screenshots">
-	                                        <!----> 
 	                                        <div class="column shrink"> <button class="project-screenshot__add"> + </button> </div>
 	                                    </div>
-	                                    <!----> <!---->
 	                                    <div class="row">
-	                                        <!----> 
 	                                    </div>
-	                                    <!----> <!----> 
-	                                </div>
+	                                </div> -->
 	                                <!----> <!---->
 	                                <div class="project-team">
 	                                    <div class="row">
@@ -469,7 +376,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                            <!----> <!---->
 	                                            <ul class="project-hires">
 	                                                <!---->
-	                                                <li class="project-hires__item">
+	                                                <li class="project-hires__item developer">
 	                                                    <!----> <span class="project-hires__item__tag">Developer</span> 
 	                                                    <div class="project-hires__item__check">
 	                                                    	<!---->
@@ -481,8 +388,8 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                    <div class="project-hires__item__info">We're hiring!</div>
 	                                                </li>
 	                                                <!---->
-	                                                <li class="project-hires__item"style="">
-													    <span class="project-hires__item__tag">Blockchain</span> 
+	                                                <li class="project-hires__item blockchain-expert"style="">
+													    <span class="project-hires__item__tag">Blockchain Expert</span> 
 													    <div class="project-hires__item__check" style="">
 													        <!---->
 													        <div class="idt-icon">
@@ -493,7 +400,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													    <div class="project-hires__item__info">We're hiring!</div>
 													</li>
 	                                                <!---->
-	                                                <li class="project-hires__item">
+	                                                <li class="project-hires__item data-analyst">
 	                                                    <!----> <span class="project-hires__item__tag">Data analyst</span> 
 	                                                    <div class="project-hires__item__check">
 	                                                    	<!---->
@@ -505,7 +412,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                    <div class="project-hires__item__info">We're hiring!</div>
 	                                                </li>
 	                                                <!---->
-	                                                <li class="project-hires__item">
+	                                                <li class="project-hires__item uxui-designer">
 	                                                    <!----> <span class="project-hires__item__tag">UX/UI Designer</span> 
 	                                                    <div class="project-hires__item__check">
 	                                                    	<!---->
@@ -517,7 +424,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                    <div class="project-hires__item__info">We're hiring!</div>
 	                                                </li>
 	                                                <!---->
-	                                                <li class="project-hires__item">
+	                                                <li class="project-hires__item project-manager">
 	                                                    <!----> <span class="project-hires__item__tag">Project manager</span> 
 	                                                    <div class="project-hires__item__check">
 	                                                    	<!---->
@@ -529,7 +436,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                    <div class="project-hires__item__info">We're hiring!</div>
 	                                                </li>
 	                                                <!---->
-	                                                <li class="project-hires__item">
+	                                                <li class="project-hires__item engineer">
 	                                                    <!----> <span class="project-hires__item__tag">Engineer</span> 
 	                                                    <div class="project-hires__item__check">
 	                                                    	<!---->

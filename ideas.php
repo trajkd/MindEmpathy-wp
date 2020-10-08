@@ -63,12 +63,7 @@
         <div id="sidebar-section-peripherial">
             <?php get_sidebar(); ?>
             <idt-page>
-                <div class="idt-page" ng-class="{
-                    ovh: hideBodyOverflow,
-                    ie11: isIE
-                    }">
-                    <!---->
-                    <div ng-view="" class="page__content" style="">
+                    <div class="page__content">
                         <div class="idt-page-top idt-page-top--small">
                             <div class="idt-page-top__blur"></div>
                             <div class="idt-page-top__header idt-page-top__header--small">
@@ -79,7 +74,7 @@
                                     </div>
                                     <div class="column idt-page-top__actions">
                                         <div class="projects__timer__container">
-                                            <!----><button type="button add-idea" class="button"> Add Idea </button><!----> <!---->
+                                            <!----><button type="button" class="button add-idea"> Add Idea </button><!----> <!---->
                                             <!----> 
                                         </div>
                                     </div>
@@ -90,7 +85,7 @@
                             <div class="row idt-page-section__content">
                                 <div class="column small-12 medium-6 idt-page-section__left">
                                     <h2 class="idt-page-section__title">
-                                        8 project<!----><span class="" style="">s</span><!----> 
+                                        <span class="number-of-projects"></span> project<span class="plural">s</span>
                                     </h2>
                                 </div>
                                 <div class="column small-12 medium-6 idt-page-section__right">
@@ -142,44 +137,7 @@
                             </div>
                         </div>
                         <!---->
-                        <div class="projects__list__container" style="">
-                            <!---->
-                            <div class="projects__list-item">
-                                <a class="projects-card" href="/viewmode">
-                                    <div class="column small-12 medium-4 projects-card__content">
-                                        <div class="projects-card__content__logo" style="background-image: url('/wp-content/themes/MindEmpathy-wp/static/img/idealogo.svg');"></div>
-                                        <h3 class="projects-card__content__title">PAGE PROJECT EXAMPLE</h3>
-                                        <p class="projects-card__content__text"> Short description of your project </p>
-                                        <div class="projects-card__content__tag-list">
-                                            <!----> 
-                                        </div>
-                                        <div class="projects-card__content__link"> View project<i class="fas fa-arrow-right"></i> </div>
-                                    </div>
-                                    <div class="column small-12 medium-8 projects-card__wrap">
-                                        <!----> <!---->
-                                        <div class="projects-card__wrap-image" style="background-image: url('/wp-content/themes/MindEmpathy-wp/static/img/ikea-man.svg');"> </div>
-                                        <!----> <!----> <!----><!---->
-                                        <div class="projects-card__hire">
-                                            <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">Developers</span> </div>
-                                            <!---->
-                                            <div class="projects-card__hire__others"> And other profiles… </div>
-                                            <!----> 
-                                            <div class="projects-card__hire__icon"> <i class="fas fa-bullhorn"></i> </div>
-                                        </div>
-                                        <!----><!----><!---->
-                                        <div class="projects-card__hire">
-                                            <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">UX/UI Designers</span> </div>
-                                            <!---->
-                                            <div class="projects-card__hire__others"> And other profiles… </div>
-                                            <!----> 
-                                            <div class="projects-card__hire__icon"> <i class="fas fa-bullhorn"></i> </div>
-                                        </div>
-                                        <!----><!----> <!----> 
-                                    </div>
-                                </a>
-                                <!----> 
-                            </div>
-                        </div>
+                        <div class="projects__list__container" style=""> </div>
                         <!----> <!----> <!----> <!----> 
                     </div>
                 </div>

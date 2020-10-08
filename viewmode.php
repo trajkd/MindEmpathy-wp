@@ -84,7 +84,6 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 											    <div class="project-category">
 											        <div class="project-category__title"> Tracks </div>
 											        <div class="project-category__options">
-											            <span class="project-category__options__item"></span>
 											        </div>
 											    </div>
 											</div>
@@ -96,7 +95,11 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 			                <div class="project-content">
 			                    <div class="row">
 			                        <div class="column small-12">
-			                            <h2 class="project-section__title title--line"> <span class="project-section__title-icon icon--content"></span> <br> <span>About our Project</span> </h2>
+			                            <h2 class="project-section__title title--line"> <span class="project-section__title-icon icon--content">
+			                            	<div class="idt-icon">
+                                                <i class="far fa-lightbulb" style="color: white;position: relative;top: 6px;"></i>
+                                            </div>
+			                            </span> <br> <span>About the Idea</span> </h2>
 			                        </div>
 			                    </div>
 			                    <div class="row align-center">
@@ -126,7 +129,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 			                            <div class="column small-12 medium-10">
 			                                <div class="project-post post--hiw">
 			                                    <h3 class="project-post__title title--hiw">How it works</h3>
-			                                    <ul class="project-hiw__list list--4">
+			                                    <ul class="project-hiw__list list--3">
 			                                        <li class="project-hiw__list-item project-hiw__list-item1">
 			                                            <div class="project-hiw">
 			                                                <div class="project-hiw__wrap-image">
@@ -157,16 +160,6 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 			                                                <p class="project-hiw__content"></p>
 			                                            </div>
 			                                        </li>
-			                                        <li class="project-hiw__list-item project-hiw__list-item4">
-			                                            <div class="project-hiw">
-			                                                <div class="project-hiw__wrap-image">
-			                                                    <img class="project-hiw__image" src=""> 
-			                                                    <div class="project-hiw__number">4</div>
-			                                                </div>
-			                                                <div class="project-hiw__title"></div>
-			                                                <p class="project-hiw__content"></p>
-			                                            </div>
-			                                        </li>
 			                                    </ul>
 			                                </div>
 			                            </div>
@@ -175,11 +168,12 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 			                    <div class="project-presentation">
 			                        <div class="row">
 			                            <div class="column small-12">
-			                                <h2 class="project-section__title title--slideshare"> <span class="project-section__title-icon icon--slideshare"></span> <br> <span>Presentation</span> </h2>
-			                                <div class="embed-responsive embed-responsive-autosize project-presentation__slideshare">
-			                                	<iframe src="">
-												</iframe>
-			                                </div>
+			                                <h2 class="project-section__title title--slideshare"> <span class="project-section__title-icon icon--slideshare">
+			                                	<div class="idt-icon">
+                                                    <i class="far fa-comment" style="color: white;position: relative;top: 2px;"></i>
+                                                </div>
+			                                </span> <br> <span>Presentation</span> </h2>
+			                                <div class="embed-responsive embed-responsive-autosize project-presentation__slideshare"></div>
 			                                <style>
 											  .embed-responsive {
 											    position: relative;
@@ -203,7 +197,11 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 			                        <div class="row">
 			                            <div class="column small-12">
 			                                <h2 class="project-section__title title--team title--line">
-			                                	<span class="project-section__title-icon icon--team"></span>
+			                                	<span class="project-section__title-icon icon--team">
+			                                		<div class="idt-icon">
+	                                                    <i class="fas fa-users" style="color: white;position: relative;top: 5px;"></i>
+	                                                </div>
+			                                	</span>
 			                                	<br>
 			                                	<span>Our team</span>
 			                                </h2>
@@ -212,16 +210,6 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 			                            <div class="column small-12">
 			                                <hr>
 			                                <ul class="project-hires public" id="hiring">
-			                                    <li class="project-hires__item enabled">
-			                                        <span class="project-hires__item__tag">Developer</span> 
-			                                        <div class="project-hires__item__info">We're hiring!</div>
-			                                        <div class="project-hires__item__apply">Apply now</div>
-			                                    </li>
-			                                    <li class="project-hires__item enabled">
-			                                        <span class="project-hires__item__tag">UX/UI Designer</span> 
-			                                        <div class="project-hires__item__info">We're hiring!</div>
-			                                        <div class="project-hires__item__apply">Apply now</div>
-			                                    </li>
 			                                </ul>
 			                            </div>
 			                        </div>
