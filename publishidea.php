@@ -1,4 +1,9 @@
-<?php /* Template Name: Publish idea */ ?>
+<?php 
+/**
+ * Template Name: Publish idea
+ * Template Post Type: page, projects
+ **/ 
+ ?>
 <!DOCTYPE html>
 <html lang="en" style="--vh:6.21px;">
     <head>
