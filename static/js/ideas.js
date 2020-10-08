@@ -1,5 +1,37 @@
+function randomString(length, chars) {
+    var result = '';
+    for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+    return result;
+}
+
 $("button.add-idea").click( function() {
-	window.location.href = "/editidea";
+	var uuid = randomString(24, '0123456789abcdefghijklmnopqrstuvwxyz')
+
+	$.ajax({
+		type : "GET",
+		dataType : "json",
+		url : "https://mindempathy.net/wp-json/wp/v2/editidea",
+		error: function(error) {
+			console.log("Error while listing existing ideas: " + error);
+		},
+		success: function(response) {
+			console.log(response);
+		}
+	});
+
+	// $.ajax({
+	// 	type : "POST",
+	// 	dataType : "json",
+	// 	url : "https://mindempathy.net/wp-json/wp/v2/editidea",
+	// 	data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectID, template: "publishidea.php"},
+	// 	error: function(error) {
+	// 		console.log("Error while creating idea: " + error);
+	// 	},
+	// 	success: function(response) {
+	// 		console.log("Idea created.");
+	// 		window.location.href = "/editidea";
+	// 	}
+	// });
 });
 
 var myCredentials = new AWS.CognitoIdentityCredentials({IdentityPoolId:'eu-central-1:dbfaca2d-0214-4100-9f00-e82d3b15c7ba'});

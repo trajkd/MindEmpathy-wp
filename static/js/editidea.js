@@ -1632,12 +1632,8 @@ $("button.view").click( function() {
 });
 
 $(".idt-switch").click( function() {
-	$(".idt-switch__inner").toggleClass("on");
-	$(".idt-switch__inner").toggleClass("off");
-	$(".idt-switch__btn").toggleClass("on");
-	$(".idt-switch__btn").toggleClass("off");
-
-	$.ajax({
+	if ($(".idt-switch__inner").attr("class").substr(-1) === "f") {
+		$.ajax({
              type : "POST",
              dataType : "json",
              url : "https://mindempathy.net/wp-json/wp/v2/projects",
@@ -1648,6 +1644,23 @@ $(".idt-switch").click( function() {
              success: function(response) {
                console.log("Project published.");
             }
-        });   
-
+        });
+	} else {
+		$.ajax({
+             type : "DELETE",
+             dataType : "json",
+             url : "https://mindempathy.net/wp-json/wp/v2/projects/"+$(".project-title").val(),
+             data : {_wpnonce: nonce},
+             error: function(error) {
+             	console.log("Error while deleting project: " + error);
+             },
+             success: function(response) {
+               console.log("Project deleted.");
+            }
+        });
+	}
+	$(".idt-switch__inner").toggleClass("on");
+	$(".idt-switch__inner").toggleClass("off");
+	$(".idt-switch__btn").toggleClass("on");
+	$(".idt-switch__btn").toggleClass("off");
 });
