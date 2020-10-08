@@ -1636,12 +1636,12 @@ $(".idt-switch").click( function() {
 	$(".idt-switch__inner").toggleClass("off");
 	$(".idt-switch__btn").toggleClass("on");
 	$(".idt-switch__btn").toggleClass("off");
-	
+
 	$.ajax({
              type : "POST",
              dataType : "json",
              url : "https://mindempathy.net/wp-json/wp/v2/posts/",
-             data : {title: $(".project-title").val(), status: "publish", content: `<!DOCTYPE html>
+             data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: `<!DOCTYPE html>
 						<html lang="en" style="--vh:6.21px;">
 						    <head>
 						        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
