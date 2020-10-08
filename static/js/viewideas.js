@@ -34,7 +34,7 @@ dynamodb.query(queryParams, function(err, data) {
 			$(".project-banner").append(`<div style="position: absolute; left: 0px; top: 0px;">
 											<iframe id="player0" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="`+$(".project-banner").width()+`" height="`+$(".project-banner").height()+`" style="pointer-events: none;"></iframe>
 										</div>`);
-			$("#player0").attr("src", "https://www.youtube.com/embed/"+(data.Items[0].YoutubeBG.S).substring((data.Items[0].YoutubeBG.S).lastIndexOf('=') + 1)+"?autoplay=1&mute=1&controls=0&iv_load_policy=3&cc_load_policy=0modestbranding=1playsinline=1&rel=0&showinfo=0&playlist=o&enablejsapi=1&widgetid=5&loop=1");
+			$("#player0").attr("src", "https://www.youtube.com/embed/"+(data.Items[0].YoutubeBG.S).substring((data.Items[0].YoutubeBG.S).lastIndexOf('=') + 1)+"?autoplay=1&loop=1&mute=1&controls=0&iv_load_policy=3&cc_load_policy=0modestbranding=1playsinline=1&rel=0&showinfo=0&playlist=o&enablejsapi=1&widgetid=5");
 		}
 		if (data.Items[0].Logo.S === "") {
 			$(".project-intro__logo img").attr("src", "/wp-content/themes/MindEmpathy-wp/static/img/idealogo.svg");
