@@ -64,7 +64,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
         <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
         <script type="text/javascript">
         	var projectID = "<?php echo esc_html( $current_user->user_email ); ?>";
-        	var nonce = <?php wp_create_nonce(); ?>;
+        	var nonce = "<?php echo wp_create_nonce(); ?>";
         </script>
     </head>
     <body id="app" class="">
