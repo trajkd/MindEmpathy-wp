@@ -68,7 +68,9 @@
         <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
         <script type="text/javascript">var projectID = "<?php 
 				if (have_posts())
-			    while (have_posts()) : the_post(); ?>"</script>
+			    while (have_posts()) : the_post(); 
+				the_content();
+				endwhile;?>"</script>
     </head>
     <body id="app" class="">
     	<div id="sidebar-section-peripherial">
