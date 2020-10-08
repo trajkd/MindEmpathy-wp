@@ -7,15 +7,10 @@ remove_filter( 'the_content', 'wpautop' );
 
 add_theme_support( 'woocommerce' ); 
 
-add_action( 'init', 'add_editidea_to_json_api', 30 );
-function add_editidea_to_json_api(){
+add_action( 'init', 'add_editidea_viewmode_to_json_api', 30 );
+function add_editidea_viewmode_to_json_api(){
     global $wp_post_types;
     $wp_post_types['editidea']->show_in_rest = true;
-}
-
-add_action( 'init', 'add_viewmode_to_json_api', 30 );
-function add_viewmode_to_json_api(){
-    global $wp_post_types;
     $wp_post_types['viewmode']->show_in_rest = true;
 }
 
