@@ -66,7 +66,7 @@
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/lago-style.css">
         <script src="/wp-content/themes/MindEmpathy-wp/static/js/main.js"></script>
         <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
-        <script type="text/javascript">var projectID = "<?php echo the_projectID; ?>"</script>
+        <script type="text/javascript">var projectID = "<?php echo $the_projectID; ?>"</script>
     </head>
     <body id="app" class="">
     	<div id="sidebar-section-peripherial">
