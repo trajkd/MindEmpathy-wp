@@ -3,7 +3,7 @@ function currentYear(){
     return date('Y');
 }
 
-remove_filter('term_description','wpautop');
+remove_filter( 'the_content', 'wpautop' );
 
 add_theme_support( 'woocommerce' ); 
 
