@@ -1640,7 +1640,7 @@ $(".idt-switch").click( function() {
 	$.ajax({
              type : "POST",
              dataType : "json",
-             url : "https://mindempathy.net/wp-json/wp/v2/posts/projects/",
+             url : "https://mindempathy.net/wp-json/wp/v2/projects",
              data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: `<!DOCTYPE html>
 						<html lang="en" style="--vh:6.21px;">
 						    <head>
