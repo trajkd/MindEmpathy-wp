@@ -1850,7 +1850,7 @@ $(".idt-switch").click( function() {
 						existing_projects += url.substr(url.lastIndexOf('/') + 1);
 					}
 				}
-				if (existing_projects.includes(($(".project-title").val()).toLowerCase().replaceAll(" ", "-"))) {
+				if (existing_projects.includes(($(".project-title").val()).toLowerCase().replace(/ /g, '-'))) {
 					alert("A project with this name already exists!");
 				} else {
 					$.ajax({
