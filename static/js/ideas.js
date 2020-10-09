@@ -9,8 +9,7 @@ $("button.add-idea").click( function() {
 
 	$.ajax({
 		type : "GET",
-		dataType : "json",
-		url : "https://mindempathy.net/wp-json/wp/v2/editidea",
+		url : "https://mindempathy.net/wp-json/wp/v2/editidea?",
 		error: function(error) {
 			console.log("Error while listing existing ideas: ");
 			console.log(error);
