@@ -1347,7 +1347,7 @@ function insertData() {
 				var imageBGfileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(imageBGfile.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 				var youtubeBGURL = "";
 			} else {
-				if (typeof data.Items[0].ImageBG.S !== 'undefined' && data.Items[0].ImageBG.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ImageBG.S !== 'undefined' && data.Items[0].ImageBG.S !== "") {
 					var imageBGfileNameURL = data.Items[0].ImageBG.S;
 				} else {
 					var imageBGfileNameURL = "";
@@ -1357,7 +1357,7 @@ function insertData() {
 				var youtubeBGURL = $("#youtubeID").val();
 				var imageBGfileNameURL = "";
 			} else {
-				if (typeof data.Items[0].YoutubeBG.S !== 'undefined' && data.Items[0].YoutubeBG.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].YoutubeBG.S !== 'undefined' && data.Items[0].YoutubeBG.S !== "") {
 					var youtubeBGURL = data.Items[0].YoutubeBG.S;
 				} else {
 					var youtubeBGURL = "";
@@ -1367,7 +1367,7 @@ function insertData() {
 				var logofile = logofiles[0];
 				var logofileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(logofile.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].Logo.S !== 'undefined' && data.Items[0].Logo.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].Logo.S !== 'undefined' && data.Items[0].Logo.S !== "") {
 					var logofileNameURL = data.Items[0].Logo.S;
 				} else {
 					var logofileNameURL = "";
@@ -1377,7 +1377,7 @@ function insertData() {
 				var pdffile = pdffiles[0];
 				var pdffileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(pdffile.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].PDF.S !== 'undefined' && data.Items[0].PDF.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].PDF.S !== 'undefined' && data.Items[0].PDF.S !== "") {
 					var pdffileNameURL = data.Items[0].PDF.S;
 				} else {
 					var pdffileNameURL = "";
@@ -1387,7 +1387,7 @@ function insertData() {
 				var step1file = stepfilesDict["step1"][0];
 				var step1fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step1file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage1.S !== 'undefined' && data.Items[0].ProjectStepImage1.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage1.S !== 'undefined' && data.Items[0].ProjectStepImage1.S !== "") {
 					var step1fileNameURL = data.Items[0].ProjectStepImage1.S;
 				} else {
 					var step1fileNameURL = "";
@@ -1397,7 +1397,7 @@ function insertData() {
 				var step2file = stepfilesDict["step2"][0];
 				var step2fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step2file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage2.S !== 'undefined' && data.Items[0].ProjectStepImage2.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage2.S !== 'undefined' && data.Items[0].ProjectStepImage2.S !== "") {
 					var step2fileNameURL = data.Items[0].ProjectStepImage2.S;
 				} else {
 					var step2fileNameURL = "";
@@ -1407,7 +1407,7 @@ function insertData() {
 				var step3file = stepfilesDict["step3"][0];
 				var step3fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step3file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage3.S !== 'undefined' && data.Items[0].ProjectStepImage3.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage3.S !== 'undefined' && data.Items[0].ProjectStepImage3.S !== "") {
 					var step3fileNameURL = data.Items[0].ProjectStepImage3.S;
 				} else {
 					var step3fileNameURL = "";
@@ -1417,7 +1417,7 @@ function insertData() {
 				var step4file = stepfilesDict["step4"][0];
 				var step4fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step4file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage4.S !== 'undefined' && data.Items[0].ProjectStepImage4.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage4.S !== 'undefined' && data.Items[0].ProjectStepImage4.S !== "") {
 					var step4fileNameURL = data.Items[0].ProjectStepImage4.S;
 				} else {
 					var step4fileNameURL = "";
@@ -1427,7 +1427,7 @@ function insertData() {
 				var step5file = stepfilesDict["step5"][0];
 				var step5fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step5file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage5.S !== 'undefined' && data.Items[0].ProjectStepImage5.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage5.S !== 'undefined' && data.Items[0].ProjectStepImage5.S !== "") {
 					var step5fileNameURL = data.Items[0].ProjectStepImage5.S;
 				} else {
 					var step5fileNameURL = "";
@@ -1437,7 +1437,7 @@ function insertData() {
 				var step6file = stepfilesDict["step6"][0];
 				var step6fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step6file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage6.S !== 'undefined' && data.Items[0].ProjectStepImage6.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage6.S !== 'undefined' && data.Items[0].ProjectStepImage6.S !== "") {
 					var step6fileNameURL = data.Items[0].ProjectStepImage6.S;
 				} else {
 					var step6fileNameURL = "";
@@ -1447,7 +1447,7 @@ function insertData() {
 				var step7file = stepfilesDict["step7"][0];
 				var step7fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step7file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage7.S !== 'undefined' && data.Items[0].ProjectStepImage7.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage7.S !== 'undefined' && data.Items[0].ProjectStepImage7.S !== "") {
 					var step7fileNameURL = data.Items[0].ProjectStepImage7.S;
 				} else {
 					var step7fileNameURL = "";
@@ -1457,7 +1457,7 @@ function insertData() {
 				var step8file = stepfilesDict["step8"][0];
 				var step8fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step8file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage8.S !== 'undefined' && data.Items[0].ProjectStepImage8.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage8.S !== 'undefined' && data.Items[0].ProjectStepImage8.S !== "") {
 					var step8fileNameURL = data.Items[0].ProjectStepImage8.S;
 				} else {
 					var step8fileNameURL = "";
@@ -1467,7 +1467,7 @@ function insertData() {
 				var step9file = stepfilesDict["step9"][0];
 				var step9fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step9file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
-				if (typeof data.Items[0].ProjectStepImage9.S !== 'undefined' && data.Items[0].ProjectStepImage9.S !== "") {
+				if (typeof data.Items[0] !== 'undefined' && typeof data.Items[0].ProjectStepImage9.S !== 'undefined' && data.Items[0].ProjectStepImage9.S !== "") {
 					var step9fileNameURL = data.Items[0].ProjectStepImage9.S;
 				} else {
 					var step9fileNameURL = "";
