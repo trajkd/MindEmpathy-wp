@@ -5,36 +5,44 @@ function randomString(length, chars) {
 }
 
 $("button.add-idea").click( function() {
-	var uuid = randomString(24, '0123456789abcdefghijklmnopqrstuvwxyz')
-
-	$.ajax({
-		type : "GET",
-		url : "https://mindempathy.net/wp-json/wp/v2/editidea",
-		error: function(error) {
-			console.log("Error while listing existing ideas: ");
-			console.log(error);
-		},
-		success: function(response) {
-			for (var i = 0; i < response.length; i++) {
-				var url = response[i].link.replace(/\/$/, '');
-				console.log(url.substr(url.lastIndexOf('/') + 1));
+	if (projectIDemail === "unauthorized") {
+		window.location.href = "/member/login";
+	} else {
+		$.ajax({
+			type : "GET",
+			url : "https://mindempathy.net/wp-json/wp/v2/editidea",
+			error: function(error) {
+				console.log("Error while listing existing ideas: ");
+				console.log(error);
+			},
+			success: function(response) {
+				if (response.length > 0) {
+					existing_uuids = [];
+					for (var i = 0; i < response.length; i++) {
+						var url = response[i].link.replace(/\/$/, '');
+						existing_uuids += url.substr(url.lastIndexOf('/') + 1);
+					}
+					var uuid = randomString(24, '0123456789abcdefghijklmnopqrstuvwxyz');
+					while (existing_uuids.includes(uuid)) {
+						var uuid = randomString(24, '0123456789abcdefghijklmnopqrstuvwxyz');
+					}
+					$.ajax({
+						type : "POST",
+						dataType : "json",
+						url : "https://mindempathy.net/wp-json/wp/v2/editidea",
+						data : {_wpnonce: nonce, title: uuid, status: "publish", content: projectIDemail, template: "editidea.php"},
+						error: function(error) {
+							console.log("Error while creating idea: " + error);
+						},
+						success: function(response) {
+							console.log("Idea created.");
+							window.location.href = "/"+uuid;
+						}
+					});
+				}
 			}
-		}
-	});
-
-	// $.ajax({
-	// 	type : "POST",
-	// 	dataType : "json",
-	// 	url : "https://mindempathy.net/wp-json/wp/v2/editidea",
-	// 	data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectID, template: "publishidea.php"},
-	// 	error: function(error) {
-	// 		console.log("Error while creating idea: " + error);
-	// 	},
-	// 	success: function(response) {
-	// 		console.log("Idea created.");
-	// 		window.location.href = "/editidea";
-	// 	}
-	// });
+		});
+	}
 });
 
 var myCredentials = new AWS.CognitoIdentityCredentials({IdentityPoolId:'eu-central-1:dbfaca2d-0214-4100-9f00-e82d3b15c7ba'});

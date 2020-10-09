@@ -1,4 +1,8 @@
-<?php /* Template Name: Edit idea */ 
+<?php
+/**
+ * Template Name: Edit idea
+ * Template Post Type: page, editidea
+ **/
 if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 <!DOCTYPE html>
 <html lang="en" style="--vh:6.21px;">
@@ -63,6 +67,8 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
         <script src="/wp-content/themes/MindEmpathy-wp/static/js/main.js"></script>
         <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
         <script type="text/javascript">
+        	var url = response[i].link.replace(/\/$/, '');
+        	var projectID = url.substr(url.lastIndexOf('/') + 1);
         	var projectIDemail = "<?php echo esc_html( $current_user->user_email ); ?>";
         	var nonce = "<?php echo wp_create_nonce('wp_rest'); ?>";
         </script>

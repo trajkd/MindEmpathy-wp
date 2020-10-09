@@ -1092,7 +1092,7 @@ function insertData() {
 			':id': {S: projectID}
 		},
 		KeyConditionExpression: 'ProjectID = :id',
-		ProjectionExpression: 'ProjectID, ImageBG, YoutubeBG, Logo, PDF, ProjectStepImage1, ProjectStepImage2, ProjectStepImage3, ProjectStepImage4, ProjectStepImage5, ProjectStepImage6, ProjectStepImage7, ProjectStepImage8, ProjectStepImage9',
+		ProjectionExpression: 'ProjectID, Author, ImageBG, YoutubeBG, Logo, PDF, ProjectStepImage1, ProjectStepImage2, ProjectStepImage3, ProjectStepImage4, ProjectStepImage5, ProjectStepImage6, ProjectStepImage7, ProjectStepImage8, ProjectStepImage9',
 		TableName: 'Projects'
 	};
 
@@ -1178,7 +1178,7 @@ function insertData() {
 			}
 			if (typeof imageBGfiles !== 'undefined' && imageBGfiles.length) {
 				var imageBGfile = imageBGfiles[0];
-				var imageBGfileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(imageBGfile.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var imageBGfileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(imageBGfile.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 				var youtubeBGURL = "";
 			} else {
 				if (data.Items[0].ImageBG.S !== "") {
@@ -1199,7 +1199,7 @@ function insertData() {
 			}
 			if (typeof logofiles !== 'undefined' && logofiles.length) {
 				var logofile = logofiles[0];
-				var logofileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(logofile.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var logofileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(logofile.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].Logo.S !== "") {
 					var logofileNameURL = data.Items[0].Logo.S;
@@ -1209,7 +1209,7 @@ function insertData() {
 			}
 			if (typeof pdffiles !== 'undefined' && pdffiles.length) {
 				var pdffile = pdffiles[0];
-				var pdffileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(pdffile.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var pdffileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(pdffile.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].PDF.S !== "") {
 					var pdffileNameURL = data.Items[0].PDF.S;
@@ -1219,7 +1219,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step1"] !== "") {
 				var step1file = stepfilesDict["step1"][0];
-				var step1fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step1file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step1fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step1file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage1.S !== "") {
 					var step1fileNameURL = data.Items[0].ProjectStepImage1.S;
@@ -1229,7 +1229,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step2"] !== "") {
 				var step2file = stepfilesDict["step2"][0];
-				var step2fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step2file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step2fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step2file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage2.S !== "") {
 					var step2fileNameURL = data.Items[0].ProjectStepImage2.S;
@@ -1239,7 +1239,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step3"] !== "") {
 				var step3file = stepfilesDict["step3"][0];
-				var step3fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step3file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step3fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step3file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage3.S !== "") {
 					var step3fileNameURL = data.Items[0].ProjectStepImage3.S;
@@ -1249,7 +1249,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step4"] !== "") {
 				var step4file = stepfilesDict["step4"][0];
-				var step4fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step4file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step4fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step4file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage4.S !== "") {
 					var step4fileNameURL = data.Items[0].ProjectStepImage4.S;
@@ -1259,7 +1259,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step5"] !== "") {
 				var step5file = stepfilesDict["step5"][0];
-				var step5fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step5file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step5fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step5file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage5.S !== "") {
 					var step5fileNameURL = data.Items[0].ProjectStepImage5.S;
@@ -1269,7 +1269,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step6"] !== "") {
 				var step6file = stepfilesDict["step6"][0];
-				var step6fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step6file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step6fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step6file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage6.S !== "") {
 					var step6fileNameURL = data.Items[0].ProjectStepImage6.S;
@@ -1279,7 +1279,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step7"] !== "") {
 				var step7file = stepfilesDict["step7"][0];
-				var step7fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step7file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step7fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step7file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage7.S !== "") {
 					var step7fileNameURL = data.Items[0].ProjectStepImage7.S;
@@ -1289,7 +1289,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step8"] !== "") {
 				var step8file = stepfilesDict["step8"][0];
-				var step8fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step8file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step8fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step8file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage8.S !== "") {
 					var step8fileNameURL = data.Items[0].ProjectStepImage8.S;
@@ -1299,7 +1299,7 @@ function insertData() {
 			}
 			if (stepfilesDict["step9"] !== "") {
 				var step9file = stepfilesDict["step9"][0];
-				var step9fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step9file.name + "-from-" + projectID).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
+				var step9fileNameURL = "https://mindempathynet.s3.eu-central-1.amazonaws.com/" + encodeURIComponent(step9file.name + "-from-" + projectIDemail).replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\*/g, '%2A');
 			} else {
 				if (data.Items[0].ProjectStepImage9.S !== "") {
 					var step9fileNameURL = data.Items[0].ProjectStepImage9.S;
@@ -1312,6 +1312,7 @@ function insertData() {
 					TableName: 'Projects',
 					Item: {
 						'ProjectID': {S: projectID},
+						'Author': {S: projectIDemail},
 						'Title': {S: $(".project-title").val()},
 						'CreatedAt': {S: "" + currentDate.getUTCFullYear() + (currentDate.getUTCMonth()+1) + currentDate.getUTCDate() + currentDate.getUTCHours() + currentDate.getUTCMinutes() + currentDate.getUTCSeconds()},
 						'Website': {S: $(".app-url").val()},
@@ -1375,7 +1376,8 @@ function insertData() {
 				    Key:{
 				        "ProjectID": {S: data.Items[0].ProjectID.S}
 				    },
-				    UpdateExpression: `set Title = :title, 
+				    UpdateExpression: `set Author = :author,
+				    						Title = :title, 
 				    						Website = :website, 
 				    						Description = :desc,
 				    						ImageBG = :imagebg,
@@ -1420,6 +1422,7 @@ function insertData() {
 				    						LinkedInURL = :linkedin,
 				    						PersonalNotes = :personalnotes`,
 				    ExpressionAttributeValues:{
+				    	":author": {S: projectIDemail},
 				    	":title": {S: $(".project-title").val()},
 				        ":website": {S: $(".app-url").val()},
 				        ":desc": {S: $(".project-tweet").val()},
@@ -1489,7 +1492,7 @@ $("button.save").click( function() {
 		var upload = new AWS.S3.ManagedUpload({
 			params: {
 				Bucket: "mindempathynet",
-				Key: imageBGfileName + "-from-" + projectID,
+				Key: imageBGfileName + "-from-" + projectIDemail,
 				Body: imageBGfile,
 				ACL: "public-read"
 			}
@@ -1511,7 +1514,7 @@ $("button.save").click( function() {
 		var upload = new AWS.S3.ManagedUpload({
 			params: {
 				Bucket: "mindempathynet",
-				Key: logofileName + "-from-" + projectID,
+				Key: logofileName + "-from-" + projectIDemail,
 				Body: logofile,
 				ACL: "public-read"
 			}
@@ -1533,7 +1536,7 @@ $("button.save").click( function() {
 		var upload = new AWS.S3.ManagedUpload({
 			params: {
 				Bucket: "mindempathynet",
-				Key: pdffileName + "-from-" + projectID,
+				Key: pdffileName + "-from-" + projectIDemail,
 				Body: pdffile,
 				ACL: "public-read"
 			}
@@ -1556,7 +1559,7 @@ $("button.save").click( function() {
 			var upload = new AWS.S3.ManagedUpload({
 				params: {
 					Bucket: "mindempathynet",
-					Key: stepfileName + "-from-" + projectID,
+					Key: stepfileName + "-from-" + projectIDemail,
 					Body: stepfile,
 					ACL: "public-read"
 				}
@@ -1628,39 +1631,97 @@ $("button.save").click( function() {
 });
 
 $("button.view").click( function() {
-	window.location.href = "/viewmode";
+	$.ajax({
+		type : "GET",
+		url : "https://mindempathy.net/wp-json/wp/v2/viewmode",
+		error: function(error) {
+			console.log("Error while listing existing ideas in viewmode: ");
+			console.log(error);
+		},
+		success: function(response) {
+			existing_viewmodes = [];
+			if (response.length > 0) {
+				for (var i = 0; i < response.length; i++) {
+					var url = response[i].link.replace(/\/$/, '');
+					existing_viewmodes += url.substr(url.lastIndexOf('/') + 1);
+				}
+			}
+			if (existing_viewmodes.includes(projectID)) {
+				window.location.href = "/viewmode/"+projectID;
+			} else {
+				$.ajax({
+					type : "POST",
+					dataType : "json",
+					url : "https://mindempathy.net/wp-json/wp/v2/viewmode",
+					data : {_wpnonce: nonce, title: projectID, status: "publish", content: projectIDemail, template: "viewmode.php"},
+					error: function(error) {
+						console.log("Error while creating idea: " + error);
+					},
+					success: function(response) {
+						console.log("Idea created.");
+						window.location.href = "/viewmode/"+projectID;
+					}
+				});
+			}
+		}
+	});
 });
 
 $(".idt-switch").click( function() {
 	if ($(".idt-switch__inner").attr("class").substr(-1) === "f") {
 		$.ajax({
-             type : "POST",
-             dataType : "json",
-             url : "https://mindempathy.net/wp-json/wp/v2/projects",
-             data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectID, template: "publishidea.php"},
-             error: function(error) {
-             	console.log("Error while publishing project: " + error);
-             },
-             success: function(response) {
-               console.log("Project published.");
-            }
-        });
+			type : "GET",
+			url : "https://mindempathy.net/wp-json/wp/v2/projects",
+			error: function(error) {
+				console.log("Error while listing existing ideas in projects: ");
+				console.log(error);
+			},
+			success: function(response) {
+				existing_projects = [];
+				if (response.length > 0) {
+					for (var i = 0; i < response.length; i++) {
+						var url = response[i].link.replace(/\/$/, '');
+						existing_projects += url.substr(url.lastIndexOf('/') + 1);
+					}
+				}
+				if (existing_projects.includes(($(".project-title").val()).toLowerCase().replace(" ", "-"))) {
+					alert("A project with this name already exists!");
+				} else {
+					$.ajax({
+						type : "POST",
+						dataType : "json",
+						url : "https://mindempathy.net/wp-json/wp/v2/projects",
+						data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectIDemail, template: "publishidea.php"},
+						error: function(error) {
+							console.log("Error while publishing project: " + error);
+						},
+						success: function(response) {
+							console.log("Project published.");
+							$(".idt-switch__inner").toggleClass("on");
+							$(".idt-switch__inner").toggleClass("off");
+							$(".idt-switch__btn").toggleClass("on");
+							$(".idt-switch__btn").toggleClass("off");
+						}
+			        });
+				}
+			}
+		});
 	} else {
 		$.ajax({
-             type : "DELETE",
-             dataType : "json",
-             url : "https://mindempathy.net/wp-json/wp/v2/projects/"+$(".project-title").val(),
-             data : {_wpnonce: nonce},
-             error: function(error) {
-             	console.log("Error while deleting project: " + error);
-             },
-             success: function(response) {
-               console.log("Project deleted.");
-            }
+			type : "DELETE",
+			dataType : "json",
+			url : "https://mindempathy.net/wp-json/wp/v2/projects/"+$(".project-title").val(),
+			data : {_wpnonce: nonce},
+			error: function(error) {
+				console.log("Error while deleting project: " + error);
+			},
+			success: function(response) {
+				console.log("Project deleted.");
+				$(".idt-switch__inner").toggleClass("on");
+				$(".idt-switch__inner").toggleClass("off");
+				$(".idt-switch__btn").toggleClass("on");
+				$(".idt-switch__btn").toggleClass("off");
+			}
         });
 	}
-	$(".idt-switch__inner").toggleClass("on");
-	$(".idt-switch__inner").toggleClass("off");
-	$(".idt-switch__btn").toggleClass("on");
-	$(".idt-switch__btn").toggleClass("off");
 });

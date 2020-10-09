@@ -1,4 +1,8 @@
-<?php /* Template Name: View mode */ 
+<?php 
+/**
+ * Template Name: View mode
+ * Template Post Type: page, viewmode
+ **/
 if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 <!DOCTYPE html>
 <html lang="en" style="--vh:6.21px;">
