@@ -1850,14 +1850,14 @@ $(".idt-switch").click( function() {
 						existing_projects += url.substr(url.lastIndexOf('/') + 1);
 					}
 				}
-				if (existing_projects.includes(($(".project-title").val()).toLowerCase().replace(" ", "-"))) {
+				if (existing_projects.includes(($(".project-title").val()).toLowerCase().replaceAll(" ", "-"))) {
 					alert("A project with this name already exists!");
 				} else {
 					$.ajax({
 						type : "POST",
 						dataType : "json",
 						url : "https://mindempathy.net/wp-json/wp/v2/projects",
-						data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectIDemail, template: "publishidea.php"},
+						data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectID, template: "publishidea.php"},
 						error: function(error) {
 							console.log("Error while publishing project: " + error);
 						},

@@ -98,7 +98,7 @@ dynamodb.scan(scanParams, function(err, data) {
 				var imageBG = "https://img.youtube.com/vi/"+data.Items[i].YoutubeBG.S+"/maxresdefault.jpg";
 			}
 			var projectItem = `<div class="projects__list-item">
-							        <a class="projects-card" href="/projects/`+(data.Items[i].Title.S).toLowerCase().replace(" ", "-")+`">
+							        <a class="projects-card" href="/projects/`+(data.Items[i].Title.S).toLowerCase().replaceAll(" ", "-")+`">
 							            <div class="column small-12 medium-4 projects-card__content">
 							                <div class="projects-card__content__logo" style="background-image: url('`+logo+`');"></div>
 							                <h3 class="projects-card__content__title">`+data.Items[i].Title.S+`</h3>
