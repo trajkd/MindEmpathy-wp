@@ -431,4 +431,12 @@ function woocom_save_extra_account_fields($customer_id) {
 }
 
 add_action('woocommerce_save_account_details', 'woocom_save_extra_account_fields');
+
+add_action( 'init', 'add_editidea_to_json_api', 30 );
+function add_editidea_to_json_api(){
+    global $wp_post_types;
+    $wp_post_types['editidea']->show_in_rest = true;
+    $wp_post_types['editidea']->rest_base = 'editidea';
+    $wp_post_types['editidea']->rest_controller_class = 'WP_REST_Posts_Controller';
+}
 ?>
