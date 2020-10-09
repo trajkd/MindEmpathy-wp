@@ -1074,6 +1074,132 @@ dynamodb.query(queryParams, function(err, data) {
 				$("."+hiring[i].toLowerCase().replace(" ", "-").replace("/", "")).addClass("enabled");
 				$("."+hiring[i].toLowerCase().replace(" ", "-").replace("/", "")).find(".project-hires__item__check").addClass("checked");
 			}
+		} else {
+			$(".project-hiw__list").html(`<li class="project-hiw__list-item project-hiw__list-item1">
+						                    <div class="project-hiw">
+						                        <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
+						                            <img class="project-hiw__image ng-hide"> 
+						                            <div class="project-hiw__image-number">1</div>
+						                        </div>
+						                        <!---->
+						                        <div>
+						                            <idt-fs-upload-file type="image" class="upload-default"on-error="onError" label="Add an image">
+						                                <label type="button" class="button upload-file__btn" accept="image/*" for="inputFile1">
+						                                    <input type="file" accept="image/*" class="input-file-hidden ng-pristine ng-untouched ng-valid ng-not-empty" id="inputFile1" name="uploader"> <span></span> <span class="upload-file__progress">Add an image</span>
+						                                </label>
+						                            </idt-fs-upload-file>
+						                            <span class="project-hiw__delete-icon"> 
+						                            	<div class="idt-icon">
+						                            		<i class="fas fa-trash"></i>
+						                            	</div> 
+						                            </span>
+						                            <!----> 
+						                            <div class="idt-max-length__wrapper"><input type="text" value="" idt-max-length="50" placeholder="Step title" class="project-step-title project-step-title1 ng-pristine ng-untouched ng-valid ng-empty editable"><span class="idt-max-length__counter"></span></div>
+						                            <!----> 
+						                            <div class="idt-max-length__wrapper"><textarea class="project-step-description project-step-description1 project__textarea ng-pristine ng-untouched ng-valid ng-empty editable" idt-max-length="200" rows="1" placeholder="Step description"></textarea><span class="idt-max-length__counter"></span>
+						                            </div>
+						                        </div>
+						                        <!----> <!----> <!----> 
+						                    </div>
+						                </li>
+						                <!---->
+						                <li class="project-hiw__list-item project-hiw__list-item2">
+						                    <div class="project-hiw">
+						                        <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
+						                            <img class="project-hiw__image ng-hide"> 
+						                            <div class="project-hiw__image-number">2</div>
+						                        </div>
+						                        <!---->
+						                        <div>
+						                            <idt-fs-upload-file type="image" class="upload-default" on-uploaded="onUploadedSteps($index)" on-error="onError" label="Add an image">
+						                                <label type="button" class="button upload-file__btn" accept="image/*" for="inputFile2">
+						                                    <input type="file" accept="image/*" class="input-file-hidden ng-pristine ng-untouched ng-valid ng-not-empty" id="inputFile2" name="uploader"> <span></span> <span class="upload-file__progress">Add an image</span>
+						                                </label>
+						                            </idt-fs-upload-file>
+						                            <span class="project-hiw__delete-icon"> 
+						                            	<div class="idt-icon">
+						                            		<i class="fas fa-trash"></i>
+						                            	</div> 
+						                            </span>
+						                            <!----> 
+						                            <div class="idt-max-length__wrapper"><input type="text" value="" idt-max-length="50" placeholder="Step title" class="project-step-title project-step-title2 ng-pristine ng-untouched ng-valid ng-empty editable"><span class="idt-max-length__counter"></span></div>
+						                            <!----> 
+						                            <div class="idt-max-length__wrapper"><textarea class="project-step-description project-step-description2 project__textarea ng-pristine ng-untouched ng-valid ng-empty editable" idt-max-length="200" rows="1" placeholder="Step description"></textarea><span class="idt-max-length__counter"></span>
+						                            </div>
+						                        </div>
+						                        <!----> <!----> <!----> 
+						                    </div>
+						                </li>
+						                <!---->
+						                <li class="project-hiw__list-item project-hiw__list-item3">
+						                    <div class="project-hiw">
+						                        <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
+						                            <img class="project-hiw__image ng-hide"> 
+						                            <div class="project-hiw__image-number">3</div>
+						                        </div>
+						                        <!---->
+						                        <div>
+						                            <idt-fs-upload-file type="image" class="upload-default" on-uploaded="onUploadedSteps($index)" on-error="onError" label="Add an image">
+						                                <label type="button" class="button upload-file__btn" accept="image/*" for="inputFile3">
+						                                    <input type="file" accept="image/*" class="input-file-hidden ng-pristine ng-untouched ng-valid ng-not-empty" id="inputFile3" name="uploader"> <span></span> <span class="upload-file__progress">Add an image</span>
+						                                </label>
+						                            </idt-fs-upload-file>
+						                            <span class="project-hiw__delete-icon"> 
+						                            	<div class="idt-icon">
+						                            		<i class="fas fa-trash"></i>
+						                            	</div> 
+						                            </span>
+						                            <!----> 
+						                            <div class="idt-max-length__wrapper"><input type="text" value="" idt-max-length="50" placeholder="Step title" class="project-step-title project-step-title3 ng-pristine ng-untouched ng-valid ng-empty editable"><span class="idt-max-length__counter"></span></div>
+						                            <!----> 
+						                            <div class="idt-max-length__wrapper"><textarea class="project-step-description project-step-description3 project__textarea ng-pristine ng-untouched ng-valid ng-empty editable" idt-max-length="200" rows="1" placeholder="Step description"></textarea><span class="idt-max-length__counter"></span>
+						                            </div>
+						                        </div>
+						                        <!----> <!----> <!----> 
+						                    </div>
+						                </li>`);
+			$('.project-hiw__list').on('classChange', function() {
+				if (parseInt($(".project-hiw__list").attr('class').substr(-1), 10) === 9) {
+					$('.add-step').attr("disabled", "disabled");
+				} else {
+					$('.add-step').removeAttr("disabled");
+				}
+				if (parseInt($(".project-hiw__list").attr('class').substr(-1), 10) === 3) {
+					$('.delete-step').attr("disabled", "disabled");
+				} else {
+					$('.delete-step').removeAttr("disabled");
+				}
+			});
+
+			$(".input-file-hidden").change(function(e) {
+
+				var uploadedStep = $(this);
+				var stepNumber = uploadedStep.parent().parent().parent().parent().find(".project-hiw__image-number").html();
+
+				var stepfiles = e.originalEvent.srcElement.files;
+
+				stepfilesDict["step" + stepNumber] = stepfiles;
+
+			    var file = stepfiles[0];
+
+			    var reader = new FileReader();
+			    reader.onloadend = function() {
+					uploadedStep.parent().parent().parent().parent().find(".project-hiw__image").attr("src", reader.result);
+					uploadedStep.parent().parent().parent().parent().find(".project-hiw__wrap-image").children().last().remove();
+					uploadedStep.parent().parent().parent().parent().find(".project-hiw__wrap-image").append(`<div class="project-hiw__number" style=""> `+stepNumber+` </div>`)
+					uploadedStep.parent().parent().parent().parent().find(".project-hiw__image").removeClass("ng-hide");
+					uploadedStep.parent().parent().parent().parent().find(".project-hiw__image-number").addClass("ng-hide");
+			    }
+			    reader.readAsDataURL(file);
+			});
+
+			$(document).on("click touch", ".project-hiw__delete-icon .fa-trash", function(e) {
+				e.preventDefault();
+				$(this).parent().parent().parent().parent().find(".project-hiw__image").addClass("ng-hide");
+			    $(this).parent().parent().parent().parent().find(".project-hiw__image-number").removeClass("ng-hide");
+			    $(this).parent().parent().parent().parent().find(".project-hiw__wrap-image").children().last().remove();
+			    $(this).parent().parent().parent().parent().find(".project-hiw__wrap-image").append(`<div class="project-hiw__image-number"> `+$(this).parent().parent().prev().find(".input-file-hidden").attr("id").substr(-1)+` </div>`)
+			});
 		}
 	}
 });
