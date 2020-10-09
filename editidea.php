@@ -321,7 +321,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                                <!---->
 	                                                <div class="note"> <span class="note-text"> This section will only display if the steps are completed. You can also add up to 2 extra steps. </span> </div>
 	                                                <!----> 
-	                                                
+	                                                <ul class="project-hiw__list list--3">
 	                                                <!---->
 	                                                <div class="text-center edit-steps"> 
 	                                                	<button class="button delete-step alert" disabled="disabled"> Delete last step (min: 3) </button> 
