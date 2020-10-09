@@ -15,7 +15,10 @@ $("button.add-idea").click( function() {
 			console.log(error);
 		},
 		success: function(response) {
-			console.log(response);
+			for (var i = 0; i < response.length; i++) {
+				var url = response[i].link.replace(/\/$/, '');
+				console.log(url.substr(url.lastIndexOf('/') + 1));
+			}
 		}
 	});
 
