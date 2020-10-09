@@ -59,7 +59,7 @@
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/ot.css">
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/vue.css">
         <script type="text/javascript">
-            var projectIDemail = "<?php if (!is_user_logged_in()){echo 'unauthorized'} else {echo esc_html( $current_user->user_email );} ?>";
+            var projectIDemail = "<?php if (!is_user_logged_in()){echo 'unauthorized';} else {echo esc_html( $current_user->user_email );}; ?>";
             var nonce = "<?php echo wp_create_nonce('wp_rest'); ?>";
         </script>
     </head>
