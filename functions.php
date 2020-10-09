@@ -432,11 +432,60 @@ function woocom_save_extra_account_fields($customer_id) {
 
 add_action('woocommerce_save_account_details', 'woocom_save_extra_account_fields');
 
-add_action( 'init', 'add_editidea_to_json_api', 30 );
-function add_editidea_to_json_api(){
-    global $wp_post_types;
-    $wp_post_types['editidea']->show_in_rest = true;
-    $wp_post_types['editidea']->rest_base = 'editidea';
-    $wp_post_types['editidea']->rest_controller_class = 'WP_REST_Posts_Controller';
+function custom_post_editidea() {
+  $labels = array(
+    'name'               => _x( 'Editidea', 'post type general name' ),
+    'singular_name'      => _x( 'Editidea', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'book' ),
+    'add_new_item'       => __( 'Add New Editidea' ),
+    'edit_item'          => __( 'Edit Editidea' ),
+    'new_item'           => __( 'New Editidea' ),
+    'all_items'          => __( 'All Editidea' ),
+    'view_item'          => __( 'View Editidea' ),
+    'search_items'       => __( 'Search Editidea' ),
+    'not_found'          => __( 'No Editidea found' ),
+    'not_found_in_trash' => __( 'No Editidea found in the Trash' ), 
+    'parent_item_colon'  => ’,
+    'menu_name'          => 'Editidea'
+  );
+  $args = array(
+    'labels'        => $labels,
+    'public'        => true,
+    'show_in_rest'  => true,
+    'menu_position' => 5,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+    'has_archive'   => true,
+  );
+  register_post_type( 'editidea', $args ); 
 }
+
+add_action( 'init', 'custom_post_editidea' );
+
+function custom_post_viewmode() {
+  $labels = array(
+    'name'               => _x( 'Viewmode', 'post type general name' ),
+    'singular_name'      => _x( 'Viewmode', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'book' ),
+    'add_new_item'       => __( 'Add New Viewmode' ),
+    'edit_item'          => __( 'Edit Viewmode' ),
+    'new_item'           => __( 'New Viewmode' ),
+    'all_items'          => __( 'All Viewmode' ),
+    'view_item'          => __( 'View Viewmode' ),
+    'search_items'       => __( 'Search Viewmode' ),
+    'not_found'          => __( 'No Viewmode found' ),
+    'not_found_in_trash' => __( 'No Viewmode found in the Trash' ), 
+    'parent_item_colon'  => ’,
+    'menu_name'          => 'Viewmode'
+  );
+  $args = array(
+    'labels'        => $labels,
+    'public'        => true,
+    'show_in_rest'  => true,
+    'menu_position' => 5,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+    'has_archive'   => true,
+  );
+  register_post_type( 'viewmode', $args ); 
+}
+add_action( 'init', 'custom_post_viewmode' );
 ?>
