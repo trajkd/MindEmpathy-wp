@@ -1158,6 +1158,53 @@ dynamodb.query(queryParams, function(err, data) {
 						                        <!----> <!----> <!----> 
 						                    </div>
 						                </li>`);
+			if($(".project-step-title").val().length > 50){
+		        val = $(".project-step-title").val().substr(0,50);
+		        $(".project-step-title").val(val);
+		    };
+		    $(".project-step-title").next().html("" + (50-$(".project-step-title").val().length));
+
+		    $(".project-step-title").on("keyup change", function() {
+				if($(this).val().length > 50){
+			        val = $(this).val().substr(0,50);
+			        $(this).val(val);
+			    };
+				$(this).next().html("" + (50-$(this).val().length));
+			});
+
+		    if($(".project-step-description").val().length > 200){
+		        val = $(".project-step-description").val().substr(0,200);
+		        $(".project-step-description").val(val);
+		    };
+		    $(".project-step-description").next().html("" + (200-$(".project-step-description").val().length));
+
+		    $(".project-step-description").on("keyup change", function() {
+				if($(this).val().length > 200){
+			        val = $(this).val().substr(0,200);
+			        $(this).val(val);
+			    };
+				$(this).next().html("" + (200-$(this).val().length));
+			});
+
+
+			$(document).on("click touch", ".delete-step", function(e) {
+				e.preventDefault();
+				var steps = parseInt($(".project-hiw__list").attr('class').substr(-1), 10);
+				$(".project-hiw__list").children().last().remove();
+			    $(".project-hiw__list").removeClass("list--"+steps);
+			    $(".project-hiw__list").addClass("list--"+(steps-1)).trigger('classChange');
+			});
+
+			if (parseInt($(".project-hiw__list").attr('class').substr(-1), 10) === 9) {
+				$('.add-step').attr("disabled", "disabled");
+			} else {
+				$('.add-step').removeAttr("disabled");
+			}
+			if (parseInt($(".project-hiw__list").attr('class').substr(-1), 10) === 3) {
+				$('.delete-step').attr("disabled", "disabled");
+			} else {
+				$('.delete-step').removeAttr("disabled");
+			}
 			$('.project-hiw__list').on('classChange', function() {
 				if (parseInt($(".project-hiw__list").attr('class').substr(-1), 10) === 9) {
 					$('.add-step').attr("disabled", "disabled");
