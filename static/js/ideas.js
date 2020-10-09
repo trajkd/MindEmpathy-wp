@@ -39,6 +39,21 @@ $("button.add-idea").click( function() {
 							window.location.href = "/"+uuid;
 						}
 					});
+				} else {
+					var uuid = randomString(24, '0123456789abcdefghijklmnopqrstuvwxyz');
+					$.ajax({
+						type : "POST",
+						dataType : "json",
+						url : "https://mindempathy.net/wp-json/wp/v2/editidea",
+						data : {_wpnonce: nonce, title: uuid, status: "publish", content: projectIDemail, template: "editidea.php"},
+						error: function(error) {
+							console.log("Error while creating idea: " + error);
+						},
+						success: function(response) {
+							console.log("Idea created.");
+							window.location.href = "/"+uuid;
+						}
+					});
 				}
 			}
 		});
