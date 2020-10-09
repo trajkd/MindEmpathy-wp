@@ -518,7 +518,7 @@ dynamodb.query(queryParams, function(err, data) {
 			$(".the-issue").val(data.Items[0].Issue.S);
 			$(".the-solution").val(data.Items[0].Solution.S);
 			function loadSteps(callback) {
-				if (typeof(data.Items[0].ProjectStepTitle1) !== "undefined" && data.Items[0].ProjectStepTitle1.S === "") {
+				if (typeof(data.Items[0].ProjectStepTitle1) === "undefined" || data.Items[0].ProjectStepTitle1.S === "") {
 					$(".project-hiw__list").html(`<li class="project-hiw__list-item project-hiw__list-item1">
 								                    <div class="project-hiw">
 								                        <div class="project-hiw__wrap-image project-hiw__wrap-image-no-content">
