@@ -444,8 +444,7 @@ function custom_post_editidea() {
     'view_item'          => __( 'View Editidea' ),
     'search_items'       => __( 'Search Editidea' ),
     'not_found'          => __( 'No Editidea found' ),
-    'not_found_in_trash' => __( 'No Editidea found in the Trash' ), 
-    'parent_item_colon'  => ’,
+    'not_found_in_trash' => __( 'No Editidea found in the Trash' ),
     'menu_name'          => 'Editidea'
   );
   $args = array(
@@ -473,8 +472,7 @@ function custom_post_viewmode() {
     'view_item'          => __( 'View Viewmode' ),
     'search_items'       => __( 'Search Viewmode' ),
     'not_found'          => __( 'No Viewmode found' ),
-    'not_found_in_trash' => __( 'No Viewmode found in the Trash' ), 
-    'parent_item_colon'  => ’,
+    'not_found_in_trash' => __( 'No Viewmode found in the Trash' ),
     'menu_name'          => 'Viewmode'
   );
   $args = array(
