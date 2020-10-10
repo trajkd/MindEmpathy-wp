@@ -84,7 +84,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
                                 <div class="project-tools__title"> View mode </div>
                                 <div class="project-tools__wrap">
                                     <div class="project-tools__actions">
-                                    	<button class="button edit"> Edit </button>
+                                    	<button class="button full"> Edit </button>
                                     </div>
                                     <!----> 
                                 </div>
