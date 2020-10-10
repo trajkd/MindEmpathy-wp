@@ -469,6 +469,12 @@ dynamodb.query(queryParams, function(err, data) {
 		console.log("Error", err);
 	} else {
 		if (data.Items.length > 0) {
+
+			$(".idt-switch__inner").toggleClass("on");
+			$(".idt-switch__inner").toggleClass("off");
+			$(".idt-switch__btn").toggleClass("on");
+			$(".idt-switch__btn").toggleClass("off");
+			
 			$(".project-title").val(data.Items[0].Title.S);
 			$(".project-tweet").val(data.Items[0].Description.S);
 			if (data.Items[0].YoutubeBG.S !== "") {
