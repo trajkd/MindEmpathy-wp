@@ -1880,20 +1880,37 @@ $(".idt-switch").click( function() {
 		});
 	} else {
 		$.ajax({
-			type : "DELETE",
-			dataType : "json",
-			url : "https://mindempathy.net/wp-json/wp/v2/projects/"+$(".project-title").val().toLowerCase().replace(/ /g, '-')+"/",
-			data : {_wpnonce: nonce},
+			type : "GET",
+			url : "https://mindempathy.net/wp-json/wp/v2/projects",
 			error: function(error) {
-				console.log("Error while deleting project: " + error);
+				console.log("Error while listing existing ideas in projects: ");
+				console.log(error);
 			},
 			success: function(response) {
-				console.log("Project deleted.");
-				$(".idt-switch__inner").toggleClass("on");
-				$(".idt-switch__inner").toggleClass("off");
-				$(".idt-switch__btn").toggleClass("on");
-				$(".idt-switch__btn").toggleClass("off");
+				existing_projects = {};
+				if (response.length > 0) {
+					for (var i = 0; i < response.length; i++) {
+						var url = response[i].link.replace(/\/$/, '');
+						existing_projects[url.substr(url.lastIndexOf('/') + 1)] = response[i].id;
+					}
+				}
+				$.ajax({
+					type : "DELETE",
+					dataType : "json",
+					url : "https://mindempathy.net/wp-json/wp/v2/projects/"+existing_projects[$(".project-title").val().toLowerCase().replace(/ /g, '-')],
+					data : {_wpnonce: nonce},
+					error: function(error) {
+						console.log("Error while deleting project: " + error);
+					},
+					success: function(response) {
+						console.log("Project deleted.");
+						$(".idt-switch__inner").toggleClass("on");
+						$(".idt-switch__inner").toggleClass("off");
+						$(".idt-switch__btn").toggleClass("on");
+						$(".idt-switch__btn").toggleClass("off");
+					}
+		        });
 			}
-        });
+		});
 	}
 });
