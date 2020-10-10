@@ -184,4 +184,4 @@ dynamodb.query(queryParams, function(err, data) {
 
 $("button.full").click( function() {
 	window.location.href = "/editidea/"+projectID;
-}
+});
