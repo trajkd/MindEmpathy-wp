@@ -1898,6 +1898,9 @@ $(".idt-switch").click( function() {
 					type : "DELETE",
 					dataType : "json",
 					url : "https://mindempathy.net/wp-json/wp/v2/projects/"+existing_projects[$(".project-title").val().toLowerCase().replace(/ /g, '-')],
+					beforeSend: function ( xhr ) {
+				        xhr.setRequestHeader( 'X-WP-Nonce', nonce );
+				    },
 					error: function(error) {
 						console.log("Error while deleting project: " + error);
 					},
