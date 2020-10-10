@@ -14,7 +14,7 @@
 		endwhile;
 		if ($IDs[1] === esc_html( $current_user->user_email )) {
 			header( "Location: /viewmode/"+$IDs[0] ); die;
-		} ?>
+		}; ?>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style class="vjs-styles-defaults">
             .video-js {
