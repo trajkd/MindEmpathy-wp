@@ -12,6 +12,7 @@
 		while (have_posts()) : the_post(); 
 		$IDs[] = str_getcsv(get_the_content());
 		endwhile;
+		echo $IDs;
 		if ($IDs[1] === esc_html( $current_user->user_email )) {
 			header( "Location: /viewmode/"+$IDs[0] ); die;
 		}; ?>
