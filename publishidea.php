@@ -12,10 +12,8 @@
 		while (have_posts()) : the_post(); 
 		$IDs = str_getcsv(get_the_content());
 		endwhile;
-		echo $IDs[0];
-		echo $IDs[1];
 		if ($IDs[1] === esc_html( $current_user->user_email )) {
-			header( "Location: /viewmode/"+$IDs[0] ); die;
+			header( "Location: /viewmode/".$IDs[0] ); die;
 		}; ?>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <style class="vjs-styles-defaults">
