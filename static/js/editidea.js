@@ -474,7 +474,7 @@ dynamodb.query(queryParams, function(err, data) {
 			$(".idt-switch__inner").toggleClass("off");
 			$(".idt-switch__btn").toggleClass("on");
 			$(".idt-switch__btn").toggleClass("off");
-			
+
 			$(".project-title").val(data.Items[0].Title.S);
 			$(".project-tweet").val(data.Items[0].Description.S);
 			if (data.Items[0].YoutubeBG.S !== "") {
@@ -1882,7 +1882,7 @@ $(".idt-switch").click( function() {
 		$.ajax({
 			type : "DELETE",
 			dataType : "json",
-			url : "https://mindempathy.net/wp-json/wp/v2/projects/"+$(".project-title").val(),
+			url : "https://mindempathy.net/wp-json/wp/v2/projects/"+$(".project-title").val().toLowerCase().replace(/ /g, '-'),
 			data : {_wpnonce: nonce},
 			error: function(error) {
 				console.log("Error while deleting project: " + error);
