@@ -1857,7 +1857,7 @@ $(".idt-switch").click( function() {
 						type : "POST",
 						dataType : "json",
 						url : "https://mindempathy.net/wp-json/wp/v2/projects",
-						data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectID, template: "publishidea.php"},
+						data : {_wpnonce: nonce, title: $(".project-title").val(), status: "publish", content: projectID+","+projectIDemail, template: "publishidea.php"},
 						error: function(error) {
 							console.log("Error while publishing project: " + error);
 						},

@@ -79,6 +79,19 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 		    <idt-page>
 		    	<div class="page__content">
 		        	<div class="project"> 
+		        		<div class="project-tools open deadline">
+                            <div class="project-tools__content">
+                                <div class="project-tools__title"> View mode </div>
+                                <div class="project-tools__wrap">
+                                    <div class="project-tools__actions">
+                                    	<button class="button edit"> Edit </button>
+                                    </div>
+                                    <!----> 
+                                </div>
+                                <!----> 
+                            </div>
+                            <button class="project-tools__toggle open"> </button> 
+                        </div>
 		            	<form name="form" novalidate="" class="ng-pristine ng-valid">
 		                	<div class="project-banner" style="background-image: url();">
 			                    <div class="project-intro">

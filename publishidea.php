@@ -3,6 +3,14 @@
  * Template Name: Publish idea
  * Template Post Type: page, projects
  **/ 
+
+if (have_posts())
+while (have_posts()) : the_post(); 
+$IDs[] = str_getcsv(the_content());
+if ($IDs[1] === esc_html( $current_user->user_email )) {
+	header( "Location: /viewmode/"+$IDs[0]+" ); die;
+}
+endwhile;
  ?>
 <!DOCTYPE html>
 <html lang="en" style="--vh:6.21px;">
@@ -66,11 +74,7 @@
         <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/lago-style.css">
         <script src="/wp-content/themes/MindEmpathy-wp/static/js/main.js"></script>
         <script src="https://kit.fontawesome.com/4c0b3ae1d6.js" crossorigin="anonymous"></script>
-        <script type="text/javascript">var projectID = "<?php 
-				if (have_posts())
-			    while (have_posts()) : the_post(); 
-				the_content();
-				endwhile;?>"</script>
+        <script type="text/javascript">var projectID = "<?php $IDs[0] ?>"</script>
     </head>
     <body id="app" class="">
     	<div id="sidebar-section-peripherial">
