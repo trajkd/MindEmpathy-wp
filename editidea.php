@@ -423,7 +423,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 	                                        <div class="column small-12">
 	                                            <hr>
 	                                            <!---->
-	                                            <h3 class="project-section__title title--team"> <span>Hiring</span> </h3>
+	                                            <h3 class="project-section__title title--team"> <span>Seeking</span> </h3>
 	                                            <!----> <!---->
 	                                            <div class="note expanded"> <span class="note-text"> To complete your team, select the profile(s) you want to recruit. Once you have published your ideas, members in the network with the corresponding profiles will be able to contact you via chat to discuss joining your team. </span> </div>
 	                                            <!----> <!---->
@@ -438,7 +438,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													        </div>
 	                                                        <!----> 
 	                                                    </div>
-	                                                    <div class="project-hires__item__info">We're hiring!</div>
+	                                                    <div class="project-hires__item__info">We need you!</div>
 	                                                </li>
 	                                                <!---->
 	                                                <li class="project-hires__item blockchain-expert"style="">
@@ -450,7 +450,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													        </div>
 													        <!----> 
 													    </div>
-													    <div class="project-hires__item__info">We're hiring!</div>
+													    <div class="project-hires__item__info">We need you!</div>
 													</li>
 	                                                <!---->
 	                                                <li class="project-hires__item data-analyst">
@@ -462,7 +462,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													        </div>
 	                                                        <!----> 
 	                                                    </div>
-	                                                    <div class="project-hires__item__info">We're hiring!</div>
+	                                                    <div class="project-hires__item__info">We need you!</div>
 	                                                </li>
 	                                                <!---->
 	                                                <li class="project-hires__item uxui-designer">
@@ -474,7 +474,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													        </div>
 	                                                        <!----> 
 	                                                    </div>
-	                                                    <div class="project-hires__item__info">We're hiring!</div>
+	                                                    <div class="project-hires__item__info">We need you!</div>
 	                                                </li>
 	                                                <!---->
 	                                                <li class="project-hires__item project-manager">
@@ -486,7 +486,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													        </div>
 	                                                        <!----> 
 	                                                    </div>
-	                                                    <div class="project-hires__item__info">We're hiring!</div>
+	                                                    <div class="project-hires__item__info">We need you!</div>
 	                                                </li>
 	                                                <!---->
 	                                                <li class="project-hires__item engineer">
@@ -498,7 +498,7 @@ if ( !is_user_logged_in() ){ header( "Location: /member/login" ); die; } ?>
 													        </div>
 	                                                        <!----> 
 	                                                    </div>
-	                                                    <div class="project-hires__item__info">We're hiring!</div>
+	                                                    <div class="project-hires__item__info">We need you!</div>
 	                                                </li>
 	                                                <!----> 
 	                                            </ul>

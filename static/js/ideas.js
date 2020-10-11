@@ -115,7 +115,7 @@ dynamodb.scan(scanParams, function(err, data) {
 			                <div class="projects-card__hire-wrapper">`;
 			for (var i = 0; i < hiring.length; i++) {
 				projectItem += `<div class="projects-card__hire">
-					                    <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're hiring</span> <span class="projects-card__hire__text3">`+hiring[i]+`s</span> </div>
+					                    <div class="projects-card__hire__my-profile many"> <span class="projects-card__hire__text1">We're seeking</span> <span class="projects-card__hire__text3">`+hiring[i]+`s</span> </div>
 					                    <div class="projects-card__hire__icon"> <i class="fas fa-bullhorn"></i> </div>
 					                </div>`;
 			}

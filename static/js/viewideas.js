@@ -175,7 +175,7 @@ dynamodb.query(queryParams, function(err, data) {
 		for (var i = 0; i < hiring.length; i++) {
 			$(".project-hires").append(`<li class="project-hires__item enabled">
 	                                        <span class="project-hires__item__tag">`+hiring[i]+`</span> 
-	                                        <div class="project-hires__item__info">We're hiring!</div>
+	                                        <div class="project-hires__item__info">We need you!</div>
 	                                        <div class="project-hires__item__apply">Apply now</div>
 	                                    </li>`);
 		}
