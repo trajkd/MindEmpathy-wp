@@ -67,83 +67,82 @@
         <div id="sidebar-section-peripherial">
             <?php get_sidebar(); ?>
             <idt-page>
-                    <div class="page__content">
-                        <div class="idt-page-top idt-page-top--small">
-                            <div class="idt-page-top__blur"></div>
-                            <div class="idt-page-top__header idt-page-top__header--small">
-                                <div class="row align-middle">
-                                    <!-- <div class="column idt-page-top__search__container"> <input type="text" placeholder="Search projects..." class="idt-page-top__search ng-pristine ng-untouched ng-valid ng-empty"> </div> -->
-                                    <div class="column idt-page-top__title__container">
-                                        <h1 class="idt-page-top__title" idt-test="page-title-project">Ideas</h1>
-                                    </div>
-                                    <div class="column idt-page-top__actions">
-                                        <div class="projects__timer__container">
-                                            <!----><button type="button" class="button add-idea"> Add Idea </button><!----> <!---->
-                                            <!----> 
-                                        </div>
-                                    </div>
+                <div class="page__content">
+                    <div class="idt-page-top idt-page-top--small">
+                        <div class="idt-page-top__blur"></div>
+                        <div class="idt-page-top__header idt-page-top__header--small">
+                            <div class="row align-middle">
+                                <!-- <div class="column idt-page-top__search__container"> <input type="text" placeholder="Search projects..." class="idt-page-top__search ng-pristine ng-untouched ng-valid ng-empty"> </div> -->
+                                <div class="column idt-page-top__title__container">
+                                    <h1 class="idt-page-top__title" idt-test="page-title-project">Ideas</h1>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="idt-page-section projects__page-section" id="idt-page-section">
-                            <div class="row idt-page-section__content">
-                                <div class="column small-12 medium-6 idt-page-section__left">
-                                    <h2 class="idt-page-section__title">
-                                        <span class="number-of-projects"></span> project<span class="plural">s</span>
-                                    </h2>
-                                </div>
-                                <div class="column small-12 medium-6 idt-page-section__right">
-                                    <div class="row align-right">
-                                        <div class="column">
-                                            <!---->
-                                            <div class="idt-page-section__tags">
-                                                <span class="idt-page-section__tags__label"> Filter by: </span> 
-                                                <div class="idt-page-section__tag-list projects__tag-list__container">
-                                                    <div class="projects__tag-list">
-                                                        <!----> 
-                                                    </div>
-                                                    <div class="button-dropdown projects__button-dropdown">
-                                                        <dropdown-toggle close-on-click="true" pane-align="right">
-                                                            <span class="" style="">
-                                                                <toggle> <button class="button input-dropdown__button dropdown">Add filters</button> </toggle>
-                                                            </span>
-                                                            <div class="dropdown-pane dropdown-pane-right" aria-hidden="$ctrl.active" style="top: 41.4688px; left: 138.422px; transform: translateX(-100%);">
-                                                                <pane>
-                                                                    <!---->
-                                                                    <div class="text-left">
-                                                                        <div class="dropdown-pane__header"> Tracks </div>
-                                                                        <ul class="dropdown menu vertical multiple" role="menu">
-                                                                            <!---->
-                                                                            <li role="menuitem"> <input type="checkbox" id="Digital"> <label class="dropdown-pane__checkbox" for="Digital"> Digital</label> </li>
-                                                                            <!---->
-                                                                            <li role="menuitem"> <input type="checkbox" id="Technology"> <label class="dropdown-pane__checkbox" for="Technology"> Technology </label> </li>
-                                                                            <!---->
-                                                                            <li role="menuitem" > <input type="checkbox" id="Ethics"> <label class="dropdown-pane__checkbox" for="Ethics"> Ethics </label> </li>
-                                                                            <!---->
-                                                                            <li role="menuitem"> <input type="checkbox" id="Blockchain"> <label class="dropdown-pane__checkbox" for="Blockchain"> Blockchain </label> </li>
-                                                                            <!---->
-                                                                            <li role="menuitem"> <input type="checkbox" id="Architecture"> <label class="dropdown-pane__checkbox" for="Architecture"> Architecture </label> </li>
-                                                                            <!----> 
-                                                                        </ul>
-                                                                    </div>
-                                                                    <!----> 
-                                                                </pane>
-                                                            </div>
-                                                        </dropdown-toggle>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!----> 
-                                        </div>
+                                <div class="column idt-page-top__actions">
+                                    <div class="projects__timer__container">
+                                        <!----><button type="button" class="button add-idea"> Add Idea </button><!----> <!---->
                                         <!----> 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!---->
-                        <div class="projects__list__container" style=""> </div>
-                        <!----> <!----> <!----> <!----> 
                     </div>
+                    <div class="idt-page-section projects__page-section" id="idt-page-section">
+                        <div class="row idt-page-section__content">
+                            <div class="column small-12 medium-6 idt-page-section__left">
+                                <h2 class="idt-page-section__title">
+                                    <span class="number-of-projects"></span> project<span class="plural">s</span>
+                                </h2>
+                            </div>
+                            <div class="column small-12 medium-6 idt-page-section__right">
+                                <div class="row align-right">
+                                    <div class="column">
+                                        <!---->
+                                        <div class="idt-page-section__tags">
+                                            <span class="idt-page-section__tags__label"> Filter by: </span> 
+                                            <div class="idt-page-section__tag-list projects__tag-list__container">
+                                                <div class="projects__tag-list">
+                                                    <!----> 
+                                                </div>
+                                                <div class="button-dropdown projects__button-dropdown">
+                                                    <dropdown-toggle close-on-click="true" pane-align="right">
+                                                        <span class="" style="">
+                                                            <toggle> <button class="button input-dropdown__button dropdown">Add filters</button> </toggle>
+                                                        </span>
+                                                        <div class="dropdown-pane dropdown-pane-right" aria-hidden="$ctrl.active" style="top: 41.4688px; left: 138.422px; transform: translateX(-100%);">
+                                                            <pane>
+                                                                <!---->
+                                                                <div class="text-left">
+                                                                    <div class="dropdown-pane__header"> Tracks </div>
+                                                                    <ul class="dropdown menu vertical multiple" role="menu">
+                                                                        <!---->
+                                                                        <li role="menuitem"> <input type="checkbox" id="Digital"> <label class="dropdown-pane__checkbox" for="Digital"> Digital</label> </li>
+                                                                        <!---->
+                                                                        <li role="menuitem"> <input type="checkbox" id="Technology"> <label class="dropdown-pane__checkbox" for="Technology"> Technology </label> </li>
+                                                                        <!---->
+                                                                        <li role="menuitem" > <input type="checkbox" id="Ethics"> <label class="dropdown-pane__checkbox" for="Ethics"> Ethics </label> </li>
+                                                                        <!---->
+                                                                        <li role="menuitem"> <input type="checkbox" id="Blockchain"> <label class="dropdown-pane__checkbox" for="Blockchain"> Blockchain </label> </li>
+                                                                        <!---->
+                                                                        <li role="menuitem"> <input type="checkbox" id="Architecture"> <label class="dropdown-pane__checkbox" for="Architecture"> Architecture </label> </li>
+                                                                        <!----> 
+                                                                    </ul>
+                                                                </div>
+                                                                <!----> 
+                                                            </pane>
+                                                        </div>
+                                                    </dropdown-toggle>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!----> 
+                                    </div>
+                                    <!----> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="projects__list__container" style=""> </div>
+                    <!----> <!----> <!----> <!----> 
                 </div>
             </idt-page>
             <?php get_footer(); ?>
