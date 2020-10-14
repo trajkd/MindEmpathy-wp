@@ -1,0 +1,73 @@
+#aboutme {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  align-content: start;
+  margin-top: 180px;
+  background-color: #f1f0e3;
+  font-size: 2vw;
+}
+
+@media only screen and (min-width: 992px) {
+  #aboutme {
+    margin-top: 200px;
+    margin-left: 96px;
+  }
+}
+
+#aboutme-title {
+  font-size: 6vw;
+  align-self: end;
+  padding-bottom: 10px;
+}
+
+#aboutme-title .ME {
+  font-family: 'BlairMdITC TT';
+  letter-spacing: -2.1vw;
+}
+
+#aboutme-location .ME {
+  font-family: 'BlairMdITC TT';
+  letter-spacing: -0.7vw;
+  padding-bottom: 10px;
+}
+
+#aboutme-aim {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#aboutme-idea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+#aboutme-aplacewhere {
+  justify-self: end;
+  align-self: center;
+  padding-right: 2vw;
+}
+
+#aboutme-investors {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aboutme-come {
+  justify-self: start;
+  align-self: center;
+  padding-left: 2vw;
+}
+
+.redden-slides {
+  color: #ff0007;
+}
