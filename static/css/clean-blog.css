@@ -500,6 +500,7 @@ header.masthead #navbarResponsive {
   #sidebar-section-peripherial {
     width: 100vw;
     overflow: hidden;
+    overflow-y: visible;
   }
 }
 
@@ -515,7 +516,7 @@ header.masthead #navbarResponsive {
 }
 
 header.masthead .overlay {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
@@ -1030,16 +1031,16 @@ ul.menu.horizontal li {
 }
 
 .start {
-  position: sticky;
+  position: absolute;
   width: 150px;
   z-index: 3;
-  margin-top: -220px;
-  left: calc(50% - 55px);
+  bottom: 80px;
+  left: calc(50% - 75px);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 992px) {
   .start {
-      margin-top: -45px;
+    margin-left: 48px;
   }
 }
 
@@ -1617,7 +1618,8 @@ ul.toc-box li:first-child {
 @media only screen and (min-width: 992px) {
   div .copyright {
     padding: 0;
-    margin-left: 96px;
+    margin: 0;
+    margin-left: 48px;
   }
 }
 

@@ -1,3 +1,104 @@
+#welcome-explore {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+#welcome-content {
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  font-size: 2vw;
+}
+
+#welcome-message {
+  font-size: 3vw;
+}
+
+#crowdsourcing {
+  font-size: 4vw;
+}
+
+#zero-explore {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 20% 80%;
+  align-content: start;
+  background-color: #f1f0e3;
+  font-size: 2vw;
+}
+
+#start-content-internal {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  align-content: start;
+  background-color: #f1f0e3;
+}
+
+#start-content {
+  padding: 20px;
+}
+
+#start-spacing {
+  background-color: white;
+}
+
+#start-zero {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #d9d9d9;
+  font-size: 6vw;
+  font-weight: 900;
+  background-color: white;
+  align-self: stretch;
+  padding-top: 60px;
+}
+
+#start-vertical {
+  padding: 40px;
+  font-size: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #d9d9d9;
+  font-weight: 900;
+  background-color: white;
+}
+
+#start-vertical span {
+  transform: rotate(-90deg);
+}
+
+#toughest-step {
+  font-size: 3vw;
+}
+
+#toughest-start {
+  font-size: 5vw;
+}
+
+.the-idea {
+  padding: 0 10px;
+}
+
+.greennen {
+  color: #6aa84f;
+}
+
+#ideaintoreality {
+  font-size: 4vw;
+}
+
 #aboutme {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: grid;
@@ -12,6 +113,12 @@
 @media only screen and (min-width: 992px) {
   #aboutme {
     margin-top: 200px;
+    margin-left: 96px;
+  }
+  #welcome-explore {
+    margin-left: 96px;
+  }
+  #zero-explore {
     margin-left: 96px;
   }
 }
