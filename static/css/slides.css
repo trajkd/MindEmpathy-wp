@@ -13,7 +13,7 @@
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  color: white;
+  color: black;
   font-size: 2vw;
 }
 
@@ -27,10 +27,9 @@
 
 #zero-explore {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  height: 100vh;
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: auto auto;
   align-content: start;
   background-color: #f1f0e3;
   font-size: 2vw;
@@ -48,23 +47,23 @@
   padding: 20px;
 }
 
-#start-spacing {
+#start-spacing, #publish-spacing, #design-spacing, #attract-spacing, #build-spacing, #showcase-spacing {
   background-color: white;
 }
 
 #start-zero {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 50px;
   color: #d9d9d9;
   font-size: 6vw;
   font-weight: 900;
   background-color: white;
   align-self: stretch;
-  padding-top: 60px;
+  padding-left: 0;
 }
 
-#start-vertical {
+.vertical {
   padding: 40px;
   font-size: 6vw;
   display: flex;
@@ -75,7 +74,7 @@
   background-color: white;
 }
 
-#start-vertical span {
+.vertical span {
   transform: rotate(-90deg);
 }
 
@@ -99,6 +98,114 @@
   font-size: 4vw;
 }
 
+#one-explore, #two-explore, #three-explore, #four-explore, #five-explore, #six-explore {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-content: start;
+  background-color: #f1f0e3;
+  font-size: 2vw;
+}
+
+#start-one, #publish-two, #design-three, #attract-four, #build-five, #showcase-six {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  color: #d9d9d9;
+  font-size: 6vw;
+  font-weight: 900;
+  background-color: white;
+  align-self: stretch;
+  padding-left: 0;
+}
+
+#start-one-content-internal, #publish-two-content-internal, #design-three-content-internal, #build-five-content-internal, #showcase-six-content-internal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 1fr 1fr;
+  align-content: start;
+  background-color: #f1f0e3;
+}
+
+#start-one-content-internal .content-internal-title .ME {
+  font-family: 'BlairMdITC TT';
+  overflow: visible;
+  letter-spacing: -0.8vw;
+}
+
+#start-one-content-internal .content-internal-description .ME {
+  font-family: 'BlairMdITC TT';
+  overflow: visible;
+  letter-spacing: -0.7vw;
+}
+
+#publish-two-content-internal .content-internal-description .ME {
+  font-family: 'BlairMdITC TT';
+  overflow: visible;
+  letter-spacing: -0.8vw;
+}
+
+#design-three-content-internal .content-internal-description .ME {
+  font-family: 'BlairMdITC TT';
+  overflow: visible;
+  letter-spacing: -0.7vw;
+}
+
+#build-five-content-internal .content-internal-description .ME {
+  font-family: 'BlairMdITC TT';
+  overflow: visible;
+  letter-spacing: -0.8vw;
+}
+
+#showcase-six-content-internal .content-internal-description .ME {
+  font-family: 'BlairMdITC TT';
+  overflow: visible;
+  letter-spacing: -0.7vw;
+}
+
+.content-internal-step {
+  font-size: 3.4vw;
+  padding: 10px 0;
+  padding-right: 10px;
+}
+
+.content-internal-title {
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+#attract-four-content-internal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  line-height: 50px;
+}
+
+#matchmaking {
+  font-size: 3vw;
+}
+
+#me-platform {
+  font-family: 'BlairMdITC TT';
+  font-size: 5vw;
+  align-self: center;
+  letter-spacing: -1.8vw;
+  margin-left: 12px;
+}
+
+#me-is-the-right-platform {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 3vw;
+}
+
+#showcase-six-content-internal .ME {
+  font-family: 'BlairMdITC TT';
+}
+
 #aboutme {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: grid;
@@ -115,10 +222,7 @@
     margin-top: 200px;
     margin-left: 96px;
   }
-  #welcome-explore {
-    margin-left: 96px;
-  }
-  #zero-explore {
+  #welcome-explore, #zero-explore, #one-explore, #two-explore, #three-explore, #four-explore, #five-explore, #six-explore{
     margin-left: 96px;
   }
 }
