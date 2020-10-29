@@ -34,9 +34,9 @@
     <!-- Page Header -->
     <header class="masthead">
       <div class="overlay particle-network-animation exploratory"></div>
-      <a class="scrollTo" href="#welcome-explore"><button class="btn btn-primary start"><i class="fas fa-angle-double-down"></i> Explore</button></a>
+      <!-- <a class="scrollTo" href="#welcome-explore"><button class="btn btn-primary start"><i class="fas fa-angle-double-down"></i> Explore</button></a> -->
     </header>
-    <div id="welcome-explore">
+    <!-- <div id="welcome-explore">
       <div id="welcome-image">
         <svg height="100%" viewBox="0 0 2334 1247" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="network 1">
@@ -781,7 +781,7 @@
           <div class="content-internal-image"></div>
         </div>
       </div>
-    </div>
+    </div> -->
     <?php get_footer(); ?>
   </div>
 
