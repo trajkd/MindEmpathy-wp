@@ -61,8 +61,9 @@
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls"><label>Image/File</label><input type="file" class="form-control-file" id="file" name="file[]" placeholder="Upload" multiple></input><small class="form-text text-danger help-block"></small></div>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6Ld7QB4aAAAAAJOIgMzq9fHtkrpgJ1nhsiA2MGc8"></div>
                         <div id="success"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-success g-recaptcha" data-sitekey="6Ld7QB4aAAAAAJOIgMzq9fHtkrpgJ1nhsiA2MGc8" data-callback='onSubmit' id="sendMessageButton" type="submit">Send</button></div>
+                        <div class="form-group"><button class="btn btn-primary btn-success" id="sendMessageButton" type="submit">Send</button></div>
                     </form>
                 </div>
             </div>
