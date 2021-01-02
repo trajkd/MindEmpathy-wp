@@ -15,6 +15,12 @@
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/boffi.css">
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/header.css">
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("contactForm").submit();
+       }
+     </script>
 </head>
 
 <body>
@@ -61,7 +67,7 @@
                             <div class="form-group floating-label-form-group controls"><label>Image/File</label><input type="file" class="form-control-file" id="file" name="file[]" placeholder="Upload" multiple></input><small class="form-text text-danger help-block"></small></div>
                         </div>
                         <div id="success"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-success" id="sendMessageButton" type="submit">Send</button></div>
+                        <div class="form-group"><button class="btn btn-primary btn-success g-recaptcha" data-sitekey="6Ld7QB4aAAAAAJOIgMzq9fHtkrpgJ1nhsiA2MGc8" data-callback='onSubmit' id="sendMessageButton" type="submit">Send</button></div>
                     </form>
                 </div>
             </div>
