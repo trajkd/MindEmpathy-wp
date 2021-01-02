@@ -63,7 +63,7 @@ $(document).ready(function() {
 			files: files,
 			captcha: grecaptcha.getResponse()
 		},
-		dataType: 'json',
+		dataType: 'jsonp',
 		beforeSubmit: function() {
 			if(!$form.valid()) {
 				return false;
