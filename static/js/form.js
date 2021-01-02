@@ -45,33 +45,35 @@ $(document).ready(function() {
 		}
 	});
 
-	$form.ajaxForm({
-		headers: {
-	        "Access-Control-Allow-Origin": "*"
-	    },
-		dataType: 'json',
-		beforeSubmit: function() {
-			if(!$form.valid()) {
-				return false;
-			}
-			$loader.show();
-		},
-		success: function(res) {
-			$loader.hide();
-			$messageModalContent.removeClass("alert-danger").addClass("alert-success");
-			$messageModalContent.html("Message sent successfully!")
-			$modal.modal("show");
-		},
-		error: function(error) {
-			$loader.hide();
-			if (error["status"] == "200") {
+	function onSubmit(token) {
+		$form.ajaxForm({
+			headers: {
+		        "Access-Control-Allow-Origin": "*"
+		    },
+			dataType: 'json',
+			beforeSubmit: function() {
+				if(!$form.valid()) {
+					return false;
+				}
+				$loader.show();
+			},
+			success: function(res) {
+				$loader.hide();
 				$messageModalContent.removeClass("alert-danger").addClass("alert-success");
 				$messageModalContent.html("Message sent successfully!")
-			} else {
-				$messageModalContent.removeClass("alert-success").addClass("alert-danger");
-				$messageModalContent.html("Failed to send the message...")
+				$modal.modal("show");
+			},
+			error: function(error) {
+				$loader.hide();
+				if (error["status"] == "200") {
+					$messageModalContent.removeClass("alert-danger").addClass("alert-success");
+					$messageModalContent.html("Message sent successfully!")
+				} else {
+					$messageModalContent.removeClass("alert-success").addClass("alert-danger");
+					$messageModalContent.html("Failed to send the message...")
+				}
+				$modal.modal("show");
 			}
-			$modal.modal("show");
-		}
-	});
+		});
+	}
 })
