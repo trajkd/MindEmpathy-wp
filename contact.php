@@ -17,9 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
      <script>
-       function onSubmit(token) {
-         document.getElementById("contactForm").submit();
-       }
+       function onSubmit(token) {}
      </script>
 </head>
 
