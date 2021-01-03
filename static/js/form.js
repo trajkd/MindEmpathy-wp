@@ -53,6 +53,11 @@ $(document).ready(function() {
 	    var message = $("#message").val();
 	    var files = $("#file").files;
 
+	    if(!$form.valid()) {
+			return false;
+		}
+		$loader.show();
+
 		$.ajax({
 			headers: {
 		        "Access-Control-Allow-Origin": "*"
@@ -68,12 +73,12 @@ $(document).ready(function() {
 				captcha: grecaptcha.getResponse()
 			},
 			dataType: 'json',
-			beforeSubmit: function() {
-				if(!$form.valid()) {
-					return false;
-				}
-				$loader.show();
-			},
+			// beforeSubmit: function() {
+			// 	if(!$form.valid()) {
+			// 		return false;
+			// 	}
+			// 	$loader.show();
+			// },
 			success: function(res) {
 				$loader.hide();
 				if (res["code"] == "500") {
