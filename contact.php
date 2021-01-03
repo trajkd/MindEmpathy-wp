@@ -15,11 +15,11 @@
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/boffi.css">
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/header.css">
     <link rel="stylesheet" type="text/css" href="/wp-content/themes/MindEmpathy-wp/static/css/clean-blog.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="/wp-content/themes/MindEmpathy-wp/static/vendor/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-form@4.3.0/dist/jquery.form.min.js"></script>
     <script src="/wp-content/themes/MindEmpathy-wp/static/js/form.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
