@@ -53,10 +53,12 @@ $(document).ready(function() {
 	    var message = $("#message").val();
 	    var files = $("#file").files;
 
-		$form.ajaxForm({
+		$.ajax({
 			headers: {
 		        "Access-Control-Allow-Origin": "*"
 		    },
+		    type: "POST",
+      		url: "https://mindempathy.mooo.com/mail.php",
 			data: {
 				name: name,
 				email: email,
