@@ -72,8 +72,13 @@ $(document).ready(function() {
 		},
 		success: function(res) {
 			$loader.hide();
-			$messageModalContent.removeClass("alert-danger").addClass("alert-success");
-			$messageModalContent.html("Message sent successfully!")
+			if (res["code"] == "500") {
+				$messageModalContent.removeClass("alert-success").addClass("alert-danger");
+				$messageModalContent.html(res["message"])
+			} else if (res["code"] == "200") {
+				$messageModalContent.removeClass("alert-danger").addClass("alert-success");
+				$messageModalContent.html("Message sent successfully!")
+			}
 			$modal.modal("show");
 		},
 		error: function(error) {
