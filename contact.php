@@ -93,6 +93,7 @@
         <hr>
         <?php get_footer(); ?>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js" async></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="/wp-content/themes/MindEmpathy-wp/static/vendor/jquery/jquery.min.js"></script>
@@ -103,7 +104,6 @@
     <script src="/wp-content/themes/MindEmpathy-wp/static/js/clean-blog.js"></script>
     <script src="/wp-content/themes/MindEmpathy-wp/static/js/form.js"></script>
     <script src="/wp-content/themes/MindEmpathy-wp/static/js/sidebar.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
